@@ -1,0 +1,5375 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{color,pxfonts,fix-cm}
+\usepackage{latexsym}
+\usepackage[mathletters]{ucs}
+\DeclareUnicodeCharacter{8211}{\textendash}
+\DeclareUnicodeCharacter{46}{\textperiodcentered}
+\DeclareUnicodeCharacter{58}{$\colon$}
+\DeclareUnicodeCharacter{124}{\textbar}
+\DeclareUnicodeCharacter{8226}{$\bullet$}
+\DeclareUnicodeCharacter{32}{$\ $}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{pict2e}
+\usepackage{wasysym}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\pagestyle{empty}
+\usepackage[margin=0in,paperwidth=612pt,paperheight=792pt]{geometry}
+\begin{document}
+\definecolor{color_29791}{rgb}{0,0,0}
+\definecolor{color_118168}{rgb}{0.34902,0.34902,0.34902}
+\definecolor{color_46504}{rgb}{0.058824,0.278431,0.380392}
+\definecolor{color_53078}{rgb}{0.082353,0.376471,0.509804}
+\definecolor{color_282751}{rgb}{1,1,0}
+\definecolor{color_37696}{rgb}{0,1,0}
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(57,-88.64001){\fontsize{28.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(57,-121.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Overall System - Operation, Measurements, and Lab Equipment }
+\put(57,-151.3){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_118168}Val Marogi }
+\put(57,-177.76){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_118168}Jacob Lamb }
+\put(57,-204.22){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_118168}Date 04/03/2025 }
+\put(57,-230.62){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_118168}ECEN 299 }
+\put(57,-257.08){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}  }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(57,-81.02002){\fontsize{19.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Objectives }
+\put(57,-102.86){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}The objective of this lab was to familiarize ourselves with various lab equipment and measurement }
+\put(57,-117.32){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}techniques needed for analyzing the performance of a stereo amplifier system. We focused on }
+\put(57,-131.86){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}measuring the gain and frequency response of key components, including the buffer, preamp, mixer, and }
+\put(57,-146.32){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}treble/bass circuits. Additionally, we ensured that the measurements obtained met the design }
+\put(57,-160.84){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}specifications. }
+\put(57,-183.34){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(57,-205.84){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}  }
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(57,-81.02002){\fontsize{19.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Procedure }
+\put(57,-111.62){\fontsize{16.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Equipment and supplies }
+\put(75,-142.66){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Function Generator }
+\put(75,-156.46){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Oscilloscope }
+\put(75,-170.26){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Stereo Amplifier System }
+\put(75,-184.06){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Jumper Wires }
+\put(75,-197.86){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Audio Jack }
+\put(75,-211.66){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Microphone }
+\put(75,-225.46){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• Powered Speakers }
+\put(75,-239.26){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• DuPont Cables }
+\put(57,-266.32){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(57,-293.56){\fontsize{16.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Procedure }
+\put(57,-320.74){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Measure Line Buffer Performance }
+\put(75,-351.04){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}1. Setup: The Preamp \& Mixer PCB and Treble \& Bass PCB were removed, leaving only }
+\put(93.02,-364.84){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}the Buffer PCB installed. }
+\put(75,-378.64){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}2. Connections: A function generator was connected to the Buffer In pin, and an }
+\put(93.02,-392.44){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}oscilloscope was used to measure both the input and output signals. }
+\put(75,-406.26){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}3. Measurements: A 2V peak-to-peak sinusoidal signal was injected, and the oscilloscope }
+\put(93.02,-420.06){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}recorded the output. }
+\put(75,-433.86){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4. Results: The gain was calculated using: A=Vout/Vin }
+\put(75,-447.66){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}5. Observation: The buffer circuit was tested to ensure it provided unity gain, maintaining }
+\put(93.02,-461.46){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}signal integrity while preventing loading effects from the following stages. }
+\put(75,-475.26){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}6. Frequency Response Table (Left Channel Only): }
+\put(57,-502.38){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(57,-524.82){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{it}\selectfont\color{color_53078}Table 1 – Frequency Response (You only need to collect data for the Left Channel.) }
+\put(57,-603.48){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(60.36,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} 퐷푒푣푖푎푡푖표푛}
+\put(111.38,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푟𝑖𝑔ℎ푡}
+\put(132.98,-633.78){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(137.54,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푑퐵}
+\put(151.4,-633.78){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(159.02,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}=20.푙표푔}
+\put(201.98,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}10}
+\put(211.7,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(퐴}
+\put(223.64,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푅}
+\put(229.1,-636.24){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(232.4,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}max}
+\put(248.6,-636.24){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(251.96,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}   }
+\put(257.72,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})−20.푙표푔}
+\put(307.48,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}10}
+\put(317.2,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(퐴}
+\put(329.08,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푅}
+\put(334.6,-636.24){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(337.9,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}min}
+\put(352.9,-636.24){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(356.74,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})=20.푙표푔}
+\put(407.68,-636.54){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}10}
+\put(419.26,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(425.56,-625.68){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}퐴}
+\put(432.52,-627.96){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푅}
+\put(438.04,-627.66){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(441.34,-627.96){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}max}
+\put(457.48,-627.66){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(460.9,-627.96){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}   }
+\put(426.16,-641.64){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}퐴}
+\put(433.12,-643.92){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푅}
+\put(438.64,-643.62){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(}
+\put(441.94,-643.92){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}min}
+\put(456.94,-643.62){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})}
+\put(460.3,-643.92){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}   }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_29791][even odd rule]
+(425.56pt, -631.44pt) -- (466.6pt, -631.44pt)
+ -- (466.6pt, -631.44pt)
+ -- (466.6pt, -630.72pt)
+ -- (466.6pt, -630.72pt)
+ -- (425.56pt, -630.72pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(466.66,-634.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791})=1.40푑퐵 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\filldraw[color_282751][even odd rule]
+(57pt, -667.74pt) -- (453.16pt, -667.74pt)
+ -- (453.16pt, -667.74pt)
+ -- (453.16pt, -654.3pt)
+ -- (453.16pt, -654.3pt)
+ -- (57pt, -654.3pt) -- cycle
+;
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(57,-664.8){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Does the given circuit meet frequency response specifications as outlined in Appendix A? }
+\put(57,-679.34){\fontsize{10.98}{1}\usefont{T1}{cmr}{b}{n}\selectfont\color{color_29791}Yes, the circuit meets the specified frequency response requirements. The measured gains at 20Hz (9.22 }
+\put(57,-693.8){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}dB) and 20kHz (7.82 dB) are within the ±3 dB range of the nominal 9.5 dB. }
+\put(18,-541.68){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푽 = ퟐVpp }
+\put(18,-555.12){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Function Generator }
+\put(163.1,-541.68){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Frequency (Hz) Vin (Vpp) Vout (Vpp) Gain }
+\put(491.38,-555.12){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(A) }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(3.360001pt, -592.98pt) -- (578.7pt, -592.98pt)
+ -- (578.7pt, -592.98pt)
+ -- (578.7pt, -530.7pt)
+ -- (578.7pt, -530.7pt)
+ -- (3.360001pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -531.18pt) -- (12.84pt, -531.18pt)
+ -- (12.84pt, -531.18pt)
+ -- (12.84pt, -530.7pt)
+ -- (12.84pt, -530.7pt)
+ -- (12.36pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -531.18pt) -- (12.84pt, -531.18pt)
+ -- (12.84pt, -531.18pt)
+ -- (12.84pt, -530.7pt)
+ -- (12.84pt, -530.7pt)
+ -- (12.36pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.84pt, -531.18pt) -- (157.46pt, -531.18pt)
+ -- (157.46pt, -531.18pt)
+ -- (157.46pt, -530.7pt)
+ -- (157.46pt, -530.7pt)
+ -- (12.84pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -531.18pt) -- (157.94pt, -531.18pt)
+ -- (157.94pt, -531.18pt)
+ -- (157.94pt, -530.7pt)
+ -- (157.94pt, -530.7pt)
+ -- (157.46pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.94pt, -531.18pt) -- (276.92pt, -531.18pt)
+ -- (276.92pt, -531.18pt)
+ -- (276.92pt, -530.7pt)
+ -- (276.92pt, -530.7pt)
+ -- (157.94pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -531.18pt) -- (277.4pt, -531.18pt)
+ -- (277.4pt, -531.18pt)
+ -- (277.4pt, -530.7pt)
+ -- (277.4pt, -530.7pt)
+ -- (276.92pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -531.18pt) -- (402.28pt, -531.18pt)
+ -- (402.28pt, -531.18pt)
+ -- (402.28pt, -530.7pt)
+ -- (402.28pt, -530.7pt)
+ -- (277.4pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.28pt, -531.18pt) -- (402.76pt, -531.18pt)
+ -- (402.76pt, -531.18pt)
+ -- (402.76pt, -530.7pt)
+ -- (402.76pt, -530.7pt)
+ -- (402.28pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.76pt, -531.18pt) -- (485.74pt, -531.18pt)
+ -- (485.74pt, -531.18pt)
+ -- (485.74pt, -530.7pt)
+ -- (485.74pt, -530.7pt)
+ -- (402.76pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(485.74pt, -531.18pt) -- (486.22pt, -531.18pt)
+ -- (486.22pt, -531.18pt)
+ -- (486.22pt, -530.7pt)
+ -- (486.22pt, -530.7pt)
+ -- (485.74pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.22pt, -531.18pt) -- (569.16pt, -531.18pt)
+ -- (569.16pt, -531.18pt)
+ -- (569.16pt, -530.7pt)
+ -- (569.16pt, -530.7pt)
+ -- (486.22pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -531.18pt) -- (569.64pt, -531.18pt)
+ -- (569.64pt, -531.18pt)
+ -- (569.64pt, -530.7pt)
+ -- (569.64pt, -530.7pt)
+ -- (569.16pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -531.18pt) -- (569.64pt, -531.18pt)
+ -- (569.64pt, -531.18pt)
+ -- (569.64pt, -530.7pt)
+ -- (569.64pt, -530.7pt)
+ -- (569.16pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -561.72pt) -- (12.84pt, -561.72pt)
+ -- (12.84pt, -561.72pt)
+ -- (12.84pt, -531.18pt)
+ -- (12.84pt, -531.18pt)
+ -- (12.36pt, -531.18pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -561.72pt) -- (157.94pt, -561.72pt)
+ -- (157.94pt, -561.72pt)
+ -- (157.94pt, -531.18pt)
+ -- (157.94pt, -531.18pt)
+ -- (157.46pt, -531.18pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -561.72pt) -- (277.4pt, -561.72pt)
+ -- (277.4pt, -561.72pt)
+ -- (277.4pt, -531.18pt)
+ -- (277.4pt, -531.18pt)
+ -- (276.92pt, -531.18pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.28pt, -561.72pt) -- (402.76pt, -561.72pt)
+ -- (402.76pt, -561.72pt)
+ -- (402.76pt, -531.18pt)
+ -- (402.76pt, -531.18pt)
+ -- (402.28pt, -531.18pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(485.74pt, -561.72pt) -- (486.22pt, -561.72pt)
+ -- (486.22pt, -561.72pt)
+ -- (486.22pt, -531.18pt)
+ -- (486.22pt, -531.18pt)
+ -- (485.74pt, -531.18pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -561.72pt) -- (569.64pt, -561.72pt)
+ -- (569.64pt, -561.72pt)
+ -- (569.64pt, -531.18pt)
+ -- (569.64pt, -531.18pt)
+ -- (569.16pt, -531.18pt) -- cycle
+;
+\begin{scope}
+\clip
+(12.9pt, -577.08pt) -- (157.46pt, -577.08pt)
+ -- (157.46pt, -577.08pt)
+ -- (157.46pt, -562.2pt)
+ -- (157.46pt, -562.2pt)
+ -- (12.9pt, -562.2pt) -- cycle
+;
+\begin{scope}
+\clip
+(12.9pt, -577.08pt) -- (157.46pt, -577.08pt)
+ -- (157.46pt, -577.08pt)
+ -- (157.46pt, -562.2pt)
+ -- (157.46pt, -562.2pt)
+ -- (12.9pt, -562.2pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(18,-572.7){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Left Channel  20Hz 2.02v 5.84v 2.89A }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(3.360001pt, -592.98pt) -- (578.7pt, -592.98pt)
+ -- (578.7pt, -592.98pt)
+ -- (578.7pt, -530.7pt)
+ -- (578.7pt, -530.7pt)
+ -- (3.360001pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -562.2pt) -- (12.84pt, -562.2pt)
+ -- (12.84pt, -562.2pt)
+ -- (12.84pt, -561.72pt)
+ -- (12.84pt, -561.72pt)
+ -- (12.36pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.84pt, -562.2pt) -- (157.46pt, -562.2pt)
+ -- (157.46pt, -562.2pt)
+ -- (157.46pt, -561.72pt)
+ -- (157.46pt, -561.72pt)
+ -- (12.84pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -562.2pt) -- (157.94pt, -562.2pt)
+ -- (157.94pt, -562.2pt)
+ -- (157.94pt, -561.72pt)
+ -- (157.94pt, -561.72pt)
+ -- (157.46pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.94pt, -562.2pt) -- (276.92pt, -562.2pt)
+ -- (276.92pt, -562.2pt)
+ -- (276.92pt, -561.72pt)
+ -- (276.92pt, -561.72pt)
+ -- (157.94pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -562.2pt) -- (277.4pt, -562.2pt)
+ -- (277.4pt, -562.2pt)
+ -- (277.4pt, -561.72pt)
+ -- (277.4pt, -561.72pt)
+ -- (276.92pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -562.2pt) -- (402.28pt, -562.2pt)
+ -- (402.28pt, -562.2pt)
+ -- (402.28pt, -561.72pt)
+ -- (402.28pt, -561.72pt)
+ -- (277.4pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.28pt, -562.2pt) -- (402.76pt, -562.2pt)
+ -- (402.76pt, -562.2pt)
+ -- (402.76pt, -561.72pt)
+ -- (402.76pt, -561.72pt)
+ -- (402.28pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.76pt, -562.2pt) -- (485.74pt, -562.2pt)
+ -- (485.74pt, -562.2pt)
+ -- (485.74pt, -561.72pt)
+ -- (485.74pt, -561.72pt)
+ -- (402.76pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(485.74pt, -562.2pt) -- (486.22pt, -562.2pt)
+ -- (486.22pt, -562.2pt)
+ -- (486.22pt, -561.72pt)
+ -- (486.22pt, -561.72pt)
+ -- (485.74pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.22pt, -562.2pt) -- (569.16pt, -562.2pt)
+ -- (569.16pt, -562.2pt)
+ -- (569.16pt, -561.72pt)
+ -- (569.16pt, -561.72pt)
+ -- (486.22pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -562.2pt) -- (569.64pt, -562.2pt)
+ -- (569.64pt, -562.2pt)
+ -- (569.64pt, -561.72pt)
+ -- (569.64pt, -561.72pt)
+ -- (569.16pt, -561.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -577.08pt) -- (12.84pt, -577.08pt)
+ -- (12.84pt, -577.08pt)
+ -- (12.84pt, -562.2pt)
+ -- (12.84pt, -562.2pt)
+ -- (12.36pt, -562.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -577.08pt) -- (157.94pt, -577.08pt)
+ -- (157.94pt, -577.08pt)
+ -- (157.94pt, -562.2pt)
+ -- (157.94pt, -562.2pt)
+ -- (157.46pt, -562.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -577.08pt) -- (277.4pt, -577.08pt)
+ -- (277.4pt, -577.08pt)
+ -- (277.4pt, -562.2pt)
+ -- (277.4pt, -562.2pt)
+ -- (276.92pt, -562.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.28pt, -577.08pt) -- (402.76pt, -577.08pt)
+ -- (402.76pt, -577.08pt)
+ -- (402.76pt, -562.2pt)
+ -- (402.76pt, -562.2pt)
+ -- (402.28pt, -562.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(485.74pt, -577.08pt) -- (486.22pt, -577.08pt)
+ -- (486.22pt, -577.08pt)
+ -- (486.22pt, -562.2pt)
+ -- (486.22pt, -562.2pt)
+ -- (485.74pt, -562.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -577.08pt) -- (569.64pt, -577.08pt)
+ -- (569.64pt, -577.08pt)
+ -- (569.64pt, -562.2pt)
+ -- (569.64pt, -562.2pt)
+ -- (569.16pt, -562.2pt) -- cycle
+;
+\begin{scope}
+\clip
+(12.9pt, -592.5pt) -- (157.46pt, -592.5pt)
+ -- (157.46pt, -592.5pt)
+ -- (157.46pt, -577.62pt)
+ -- (157.46pt, -577.62pt)
+ -- (12.9pt, -577.62pt) -- cycle
+;
+\begin{scope}
+\clip
+(12.9pt, -592.5pt) -- (157.46pt, -592.5pt)
+ -- (157.46pt, -592.5pt)
+ -- (157.46pt, -577.62pt)
+ -- (157.46pt, -577.62pt)
+ -- (12.9pt, -577.62pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(18,-588.06){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Left Channel 20KHz 2.08v 5.12v 2.46A }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(3.360001pt, -592.98pt) -- (578.7pt, -592.98pt)
+ -- (578.7pt, -592.98pt)
+ -- (578.7pt, -530.7pt)
+ -- (578.7pt, -530.7pt)
+ -- (3.360001pt, -530.7pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -577.56pt) -- (12.84pt, -577.56pt)
+ -- (12.84pt, -577.56pt)
+ -- (12.84pt, -577.08pt)
+ -- (12.84pt, -577.08pt)
+ -- (12.36pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.84pt, -577.56pt) -- (157.46pt, -577.56pt)
+ -- (157.46pt, -577.56pt)
+ -- (157.46pt, -577.08pt)
+ -- (157.46pt, -577.08pt)
+ -- (12.84pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -577.56pt) -- (157.94pt, -577.56pt)
+ -- (157.94pt, -577.56pt)
+ -- (157.94pt, -577.08pt)
+ -- (157.94pt, -577.08pt)
+ -- (157.46pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.94pt, -577.56pt) -- (276.92pt, -577.56pt)
+ -- (276.92pt, -577.56pt)
+ -- (276.92pt, -577.08pt)
+ -- (276.92pt, -577.08pt)
+ -- (157.94pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -577.56pt) -- (277.4pt, -577.56pt)
+ -- (277.4pt, -577.56pt)
+ -- (277.4pt, -577.08pt)
+ -- (277.4pt, -577.08pt)
+ -- (276.92pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -577.56pt) -- (402.28pt, -577.56pt)
+ -- (402.28pt, -577.56pt)
+ -- (402.28pt, -577.08pt)
+ -- (402.28pt, -577.08pt)
+ -- (277.4pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.28pt, -577.56pt) -- (402.76pt, -577.56pt)
+ -- (402.76pt, -577.56pt)
+ -- (402.76pt, -577.08pt)
+ -- (402.76pt, -577.08pt)
+ -- (402.28pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.76pt, -577.56pt) -- (485.74pt, -577.56pt)
+ -- (485.74pt, -577.56pt)
+ -- (485.74pt, -577.08pt)
+ -- (485.74pt, -577.08pt)
+ -- (402.76pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(485.74pt, -577.56pt) -- (486.22pt, -577.56pt)
+ -- (486.22pt, -577.56pt)
+ -- (486.22pt, -577.08pt)
+ -- (486.22pt, -577.08pt)
+ -- (485.74pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.22pt, -577.56pt) -- (569.16pt, -577.56pt)
+ -- (569.16pt, -577.56pt)
+ -- (569.16pt, -577.08pt)
+ -- (569.16pt, -577.08pt)
+ -- (486.22pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -577.56pt) -- (569.64pt, -577.56pt)
+ -- (569.64pt, -577.56pt)
+ -- (569.64pt, -577.08pt)
+ -- (569.64pt, -577.08pt)
+ -- (569.16pt, -577.08pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -592.5pt) -- (12.84pt, -592.5pt)
+ -- (12.84pt, -592.5pt)
+ -- (12.84pt, -577.56pt)
+ -- (12.84pt, -577.56pt)
+ -- (12.36pt, -577.56pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -592.98pt) -- (12.84pt, -592.98pt)
+ -- (12.84pt, -592.98pt)
+ -- (12.84pt, -592.5pt)
+ -- (12.84pt, -592.5pt)
+ -- (12.36pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.36pt, -592.98pt) -- (12.84pt, -592.98pt)
+ -- (12.84pt, -592.98pt)
+ -- (12.84pt, -592.5pt)
+ -- (12.84pt, -592.5pt)
+ -- (12.36pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(12.84pt, -592.98pt) -- (157.46pt, -592.98pt)
+ -- (157.46pt, -592.98pt)
+ -- (157.46pt, -592.5pt)
+ -- (157.46pt, -592.5pt)
+ -- (12.84pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -592.5pt) -- (157.94pt, -592.5pt)
+ -- (157.94pt, -592.5pt)
+ -- (157.94pt, -577.56pt)
+ -- (157.94pt, -577.56pt)
+ -- (157.46pt, -577.56pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -592.98pt) -- (157.94pt, -592.98pt)
+ -- (157.94pt, -592.98pt)
+ -- (157.94pt, -592.5pt)
+ -- (157.94pt, -592.5pt)
+ -- (157.46pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.94pt, -592.98pt) -- (276.92pt, -592.98pt)
+ -- (276.92pt, -592.98pt)
+ -- (276.92pt, -592.5pt)
+ -- (276.92pt, -592.5pt)
+ -- (157.94pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -592.5pt) -- (277.4pt, -592.5pt)
+ -- (277.4pt, -592.5pt)
+ -- (277.4pt, -577.56pt)
+ -- (277.4pt, -577.56pt)
+ -- (276.92pt, -577.56pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -592.98pt) -- (277.4pt, -592.98pt)
+ -- (277.4pt, -592.98pt)
+ -- (277.4pt, -592.5pt)
+ -- (277.4pt, -592.5pt)
+ -- (276.92pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -592.98pt) -- (402.28pt, -592.98pt)
+ -- (402.28pt, -592.98pt)
+ -- (402.28pt, -592.5pt)
+ -- (402.28pt, -592.5pt)
+ -- (277.4pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.28pt, -592.5pt) -- (402.76pt, -592.5pt)
+ -- (402.76pt, -592.5pt)
+ -- (402.76pt, -577.56pt)
+ -- (402.76pt, -577.56pt)
+ -- (402.28pt, -577.56pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.28pt, -592.98pt) -- (402.76pt, -592.98pt)
+ -- (402.76pt, -592.98pt)
+ -- (402.76pt, -592.5pt)
+ -- (402.76pt, -592.5pt)
+ -- (402.28pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.76pt, -592.98pt) -- (485.74pt, -592.98pt)
+ -- (485.74pt, -592.98pt)
+ -- (485.74pt, -592.5pt)
+ -- (485.74pt, -592.5pt)
+ -- (402.76pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(485.74pt, -592.5pt) -- (486.22pt, -592.5pt)
+ -- (486.22pt, -592.5pt)
+ -- (486.22pt, -577.56pt)
+ -- (486.22pt, -577.56pt)
+ -- (485.74pt, -577.56pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(485.74pt, -592.98pt) -- (486.22pt, -592.98pt)
+ -- (486.22pt, -592.98pt)
+ -- (486.22pt, -592.5pt)
+ -- (486.22pt, -592.5pt)
+ -- (485.74pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.22pt, -592.98pt) -- (569.16pt, -592.98pt)
+ -- (569.16pt, -592.98pt)
+ -- (569.16pt, -592.5pt)
+ -- (569.16pt, -592.5pt)
+ -- (486.22pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -592.5pt) -- (569.64pt, -592.5pt)
+ -- (569.64pt, -592.5pt)
+ -- (569.64pt, -577.56pt)
+ -- (569.64pt, -577.56pt)
+ -- (569.16pt, -577.56pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -592.98pt) -- (569.64pt, -592.98pt)
+ -- (569.64pt, -592.98pt)
+ -- (569.64pt, -592.5pt)
+ -- (569.64pt, -592.5pt)
+ -- (569.16pt, -592.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(569.16pt, -592.98pt) -- (569.64pt, -592.98pt)
+ -- (569.64pt, -592.98pt)
+ -- (569.64pt, -592.5pt)
+ -- (569.64pt, -592.5pt)
+ -- (569.16pt, -592.5pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(286.55,-283.4){\includegraphics[width=295.6pt,height=178.9pt]{latexImage_b9aebbe715bad310d1bb6318500826b6.png}}
+\put(57,-303.46){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(57,-325.96){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{it}\selectfont\color{color_53078}Figure 1and 2 shows the oscilloscope measurements for the Left Channel at 20 Hz and 20 kHz }
+\put(57,-348.4){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(57,-373.72){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Measure Microphone Preamp Circuit Performance }
+\put(75,-404.1){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}1. Setup: The Preamp \& Mixer PCB was inserted into the chassis. }
+\put(75,-417.9){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}2. Connections: The function generator was connected to the input of the preamp circuit }
+\put(93.02,-431.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}(JB1), and an oscilloscope measured the output from JB5. }
+\put(75,-445.5){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}3. Measurements: The gain was calculated using the same formula as in the buffer section. }
+\put(75,-459.3){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4. Observation: The preamp circuit successfully amplified the weak microphone signal to a }
+\put(93.02,-473.1){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}stronger level suitable for further processing. }
+\put(57,-502.98){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Measure Mixer Circuit Performance }
+\put(75,-533.34){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}1. Setup: The Preamp \& Mixer PCB was configured with the input connected to both the }
+\put(93.02,-547.14){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}microphone and audio sources. }
+\put(75,-560.94){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}2. Connections: The oscilloscope was used to measure the left channel output. }
+\put(75,-574.74){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}3. Measurements: The sum of the input signals was verified. }
+\put(75,-588.54){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4. Observation: The mixer successfully combined signals from multiple sources, ensuring a }
+\put(93.02,-602.34){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}balanced output. }
+\put(57,-630.12){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(75,-657.96){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}5. Frequency Response Table: }
+\put(93.02,-685.76){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(-2.1,-76.28003){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Buffer Left 20Hz }
+\put(277.64,-292.42){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(288.44,-76.28003){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Butter Left 20KHz }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(-15pt, -292.96pt) -- (597pt, -292.96pt)
+ -- (597pt, -292.96pt)
+ -- (597pt, -65.29999pt)
+ -- (597pt, -65.29999pt)
+ -- (-15pt, -65.29999pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-7.74pt, -65.78003pt) -- (-7.26pt, -65.78003pt)
+ -- (-7.26pt, -65.78003pt)
+ -- (-7.26pt, -65.30005pt)
+ -- (-7.26pt, -65.30005pt)
+ -- (-7.74pt, -65.30005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-7.74pt, -65.78003pt) -- (-7.26pt, -65.78003pt)
+ -- (-7.26pt, -65.78003pt)
+ -- (-7.26pt, -65.30005pt)
+ -- (-7.26pt, -65.30005pt)
+ -- (-7.74pt, -65.30005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-7.26pt, -65.78003pt) -- (282.86pt, -65.78003pt)
+ -- (282.86pt, -65.78003pt)
+ -- (282.86pt, -65.30005pt)
+ -- (282.86pt, -65.30005pt)
+ -- (-7.26pt, -65.30005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(282.86pt, -65.78003pt) -- (283.34pt, -65.78003pt)
+ -- (283.34pt, -65.78003pt)
+ -- (283.34pt, -65.30005pt)
+ -- (283.34pt, -65.30005pt)
+ -- (282.86pt, -65.30005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(283.34pt, -65.78003pt) -- (589.32pt, -65.78003pt)
+ -- (589.32pt, -65.78003pt)
+ -- (589.32pt, -65.30005pt)
+ -- (589.32pt, -65.30005pt)
+ -- (283.34pt, -65.30005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(589.32pt, -65.78003pt) -- (589.8pt, -65.78003pt)
+ -- (589.8pt, -65.78003pt)
+ -- (589.8pt, -65.30005pt)
+ -- (589.8pt, -65.30005pt)
+ -- (589.32pt, -65.30005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(589.32pt, -65.78003pt) -- (589.8pt, -65.78003pt)
+ -- (589.8pt, -65.78003pt)
+ -- (589.8pt, -65.30005pt)
+ -- (589.8pt, -65.30005pt)
+ -- (589.32pt, -65.30005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-7.74pt, -292.48pt) -- (-7.26pt, -292.48pt)
+ -- (-7.26pt, -292.48pt)
+ -- (-7.26pt, -65.78003pt)
+ -- (-7.26pt, -65.78003pt)
+ -- (-7.74pt, -65.78003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-7.74pt, -292.96pt) -- (-7.26pt, -292.96pt)
+ -- (-7.26pt, -292.96pt)
+ -- (-7.26pt, -292.48pt)
+ -- (-7.26pt, -292.48pt)
+ -- (-7.74pt, -292.48pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-7.74pt, -292.96pt) -- (-7.26pt, -292.96pt)
+ -- (-7.26pt, -292.96pt)
+ -- (-7.26pt, -292.48pt)
+ -- (-7.26pt, -292.48pt)
+ -- (-7.74pt, -292.48pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-7.26pt, -292.96pt) -- (282.86pt, -292.96pt)
+ -- (282.86pt, -292.96pt)
+ -- (282.86pt, -292.48pt)
+ -- (282.86pt, -292.48pt)
+ -- (-7.26pt, -292.48pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(282.86pt, -292.48pt) -- (283.34pt, -292.48pt)
+ -- (283.34pt, -292.48pt)
+ -- (283.34pt, -65.78003pt)
+ -- (283.34pt, -65.78003pt)
+ -- (282.86pt, -65.78003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(282.86pt, -292.96pt) -- (283.34pt, -292.96pt)
+ -- (283.34pt, -292.96pt)
+ -- (283.34pt, -292.48pt)
+ -- (283.34pt, -292.48pt)
+ -- (282.86pt, -292.48pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(283.34pt, -292.96pt) -- (589.32pt, -292.96pt)
+ -- (589.32pt, -292.96pt)
+ -- (589.32pt, -292.48pt)
+ -- (589.32pt, -292.48pt)
+ -- (283.34pt, -292.48pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(589.32pt, -292.48pt) -- (589.8pt, -292.48pt)
+ -- (589.8pt, -292.48pt)
+ -- (589.8pt, -65.78003pt)
+ -- (589.8pt, -65.78003pt)
+ -- (589.32pt, -65.78003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(589.32pt, -292.96pt) -- (589.8pt, -292.96pt)
+ -- (589.8pt, -292.96pt)
+ -- (589.8pt, -292.48pt)
+ -- (589.8pt, -292.48pt)
+ -- (589.32pt, -292.48pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(589.32pt, -292.96pt) -- (589.8pt, -292.96pt)
+ -- (589.8pt, -292.96pt)
+ -- (589.8pt, -292.48pt)
+ -- (589.8pt, -292.48pt)
+ -- (589.32pt, -292.48pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(-2.1pt, -292.4pt) -- (277.62pt, -292.4pt)
+ -- (277.62pt, -292.4pt)
+ -- (277.62pt, -79.22998pt)
+ -- (277.62pt, -79.22998pt)
+ -- (-2.1pt, -79.22998pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(-2.1,-292.43){\includegraphics[width=279.72pt,height=213.2pt]{latexImage_133883c72424582ad1cfa63e48d6dd89.png}}
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(93.02,-71.35999){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_53078}Table 2 Pre-Amp and Mixer Frequency Response  }
+\put(291.02,-185.02){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{it}\selectfont\color{color_53078} }
+\put(57,-449.94){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{it}\selectfont\color{color_53078}Figure 3and 4 shows the oscilloscope measurements for Pre-Amp and Mixer at 20 Hz and 20 KHz. }
+\put(57,-475.26){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504} }
+\put(57,-501.72){\fontsize{13.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Measure Treble and Bass Circuit Performance }
+\put(70.5,-532.08){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}1. Setup: The Buffer, Mixer, and Treble \& Bass PCBs were inserted into the chassis. }
+\put(70.5,-545.88){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}2. Connections: The function generator was used to inject a test signal, and the oscilloscope }
+\put(88.52,-559.68){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}measured the left and right channel responses. }
+\put(70.5,-573.48){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}3. Measurements: The gain was recorded for both the treble and bass circuits at different }
+\put(88.52,-587.46){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}settings (훼 = 0 and 훼 = 1). }
+\put(70.5,-601.32){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4. Observation: The treble and bass controls adjusted frequency response as expected, }
+\put(88.52,-615.12){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}boosting or cutting high and low frequencies. }
+\put(70.5,-628.92){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}5. Results: Table 3 Treble and Bass Frequency Response Measurements. }
+\put(93.02,-656.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(16.98,-89.23999){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Amplifier }
+\put(162.62,-89.29999){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Frequency (Hz) Vin (Vpp) Vout (Vpp) |AdB| }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(2.34pt, -174.52pt) -- (579.72pt, -174.52pt)
+ -- (579.72pt, -174.52pt)
+ -- (579.72pt, -78.32001pt)
+ -- (579.72pt, -78.32001pt)
+ -- (2.34pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -78.79999pt) -- (11.82pt, -78.79999pt)
+ -- (11.82pt, -78.79999pt)
+ -- (11.82pt, -78.32001pt)
+ -- (11.82pt, -78.32001pt)
+ -- (11.34pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -78.79999pt) -- (11.82pt, -78.79999pt)
+ -- (11.82pt, -78.79999pt)
+ -- (11.82pt, -78.32001pt)
+ -- (11.82pt, -78.32001pt)
+ -- (11.34pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.82pt, -78.79999pt) -- (156.98pt, -78.79999pt)
+ -- (156.98pt, -78.79999pt)
+ -- (156.98pt, -78.32001pt)
+ -- (156.98pt, -78.32001pt)
+ -- (11.82pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -78.79999pt) -- (157.46pt, -78.79999pt)
+ -- (157.46pt, -78.79999pt)
+ -- (157.46pt, -78.32001pt)
+ -- (157.46pt, -78.32001pt)
+ -- (156.98pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -78.79999pt) -- (276.92pt, -78.79999pt)
+ -- (276.92pt, -78.79999pt)
+ -- (276.92pt, -78.32001pt)
+ -- (276.92pt, -78.32001pt)
+ -- (157.46pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -78.79999pt) -- (277.4pt, -78.79999pt)
+ -- (277.4pt, -78.79999pt)
+ -- (277.4pt, -78.32001pt)
+ -- (277.4pt, -78.32001pt)
+ -- (276.92pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -78.79999pt) -- (402.7pt, -78.79999pt)
+ -- (402.7pt, -78.79999pt)
+ -- (402.7pt, -78.32001pt)
+ -- (402.7pt, -78.32001pt)
+ -- (277.4pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -78.79999pt) -- (403.18pt, -78.79999pt)
+ -- (403.18pt, -78.79999pt)
+ -- (403.18pt, -78.32001pt)
+ -- (403.18pt, -78.32001pt)
+ -- (402.7pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(403.18pt, -78.79999pt) -- (486.46pt, -78.79999pt)
+ -- (486.46pt, -78.79999pt)
+ -- (486.46pt, -78.32001pt)
+ -- (486.46pt, -78.32001pt)
+ -- (403.18pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -78.79999pt) -- (486.94pt, -78.79999pt)
+ -- (486.94pt, -78.79999pt)
+ -- (486.94pt, -78.32001pt)
+ -- (486.94pt, -78.32001pt)
+ -- (486.46pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.94pt, -78.79999pt) -- (570.24pt, -78.79999pt)
+ -- (570.24pt, -78.79999pt)
+ -- (570.24pt, -78.32001pt)
+ -- (570.24pt, -78.32001pt)
+ -- (486.94pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -78.79999pt) -- (570.72pt, -78.79999pt)
+ -- (570.72pt, -78.79999pt)
+ -- (570.72pt, -78.32001pt)
+ -- (570.72pt, -78.32001pt)
+ -- (570.24pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -78.79999pt) -- (570.72pt, -78.79999pt)
+ -- (570.72pt, -78.79999pt)
+ -- (570.72pt, -78.32001pt)
+ -- (570.72pt, -78.32001pt)
+ -- (570.24pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -109.28pt) -- (11.82pt, -109.28pt)
+ -- (11.82pt, -109.28pt)
+ -- (11.82pt, -78.80005pt)
+ -- (11.82pt, -78.80005pt)
+ -- (11.34pt, -78.80005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -109.28pt) -- (157.46pt, -109.28pt)
+ -- (157.46pt, -109.28pt)
+ -- (157.46pt, -78.80005pt)
+ -- (157.46pt, -78.80005pt)
+ -- (156.98pt, -78.80005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -109.28pt) -- (277.4pt, -109.28pt)
+ -- (277.4pt, -109.28pt)
+ -- (277.4pt, -78.80005pt)
+ -- (277.4pt, -78.80005pt)
+ -- (276.92pt, -78.80005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -109.28pt) -- (403.18pt, -109.28pt)
+ -- (403.18pt, -109.28pt)
+ -- (403.18pt, -78.80005pt)
+ -- (403.18pt, -78.80005pt)
+ -- (402.7pt, -78.80005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -109.28pt) -- (486.94pt, -109.28pt)
+ -- (486.94pt, -109.28pt)
+ -- (486.94pt, -78.80005pt)
+ -- (486.94pt, -78.80005pt)
+ -- (486.46pt, -78.80005pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -109.28pt) -- (570.72pt, -109.28pt)
+ -- (570.72pt, -109.28pt)
+ -- (570.72pt, -78.80005pt)
+ -- (570.72pt, -78.80005pt)
+ -- (570.24pt, -78.80005pt) -- cycle
+;
+\begin{scope}
+\clip
+(11.82pt, -127.84pt) -- (156.98pt, -127.84pt)
+ -- (156.98pt, -127.84pt)
+ -- (156.98pt, -109.82pt)
+ -- (156.98pt, -109.82pt)
+ -- (11.82pt, -109.82pt) -- cycle
+;
+\begin{scope}
+\clip
+(11.82pt, -127.84pt) -- (156.98pt, -127.84pt)
+ -- (156.98pt, -127.84pt)
+ -- (156.98pt, -109.82pt)
+ -- (156.98pt, -109.82pt)
+ -- (11.82pt, -109.82pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(16.98,-120.26){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Pre-Amp 20Hz 84mV 22.0v 259 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(2.34pt, -174.52pt) -- (579.72pt, -174.52pt)
+ -- (579.72pt, -174.52pt)
+ -- (579.72pt, -78.32001pt)
+ -- (579.72pt, -78.32001pt)
+ -- (2.34pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -109.76pt) -- (11.82pt, -109.76pt)
+ -- (11.82pt, -109.76pt)
+ -- (11.82pt, -109.28pt)
+ -- (11.82pt, -109.28pt)
+ -- (11.34pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.82pt, -109.76pt) -- (156.98pt, -109.76pt)
+ -- (156.98pt, -109.76pt)
+ -- (156.98pt, -109.28pt)
+ -- (156.98pt, -109.28pt)
+ -- (11.82pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -109.76pt) -- (157.46pt, -109.76pt)
+ -- (157.46pt, -109.76pt)
+ -- (157.46pt, -109.28pt)
+ -- (157.46pt, -109.28pt)
+ -- (156.98pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -109.76pt) -- (276.92pt, -109.76pt)
+ -- (276.92pt, -109.76pt)
+ -- (276.92pt, -109.28pt)
+ -- (276.92pt, -109.28pt)
+ -- (157.46pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -109.76pt) -- (277.4pt, -109.76pt)
+ -- (277.4pt, -109.76pt)
+ -- (277.4pt, -109.28pt)
+ -- (277.4pt, -109.28pt)
+ -- (276.92pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -109.76pt) -- (402.7pt, -109.76pt)
+ -- (402.7pt, -109.76pt)
+ -- (402.7pt, -109.28pt)
+ -- (402.7pt, -109.28pt)
+ -- (277.4pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -109.76pt) -- (403.18pt, -109.76pt)
+ -- (403.18pt, -109.76pt)
+ -- (403.18pt, -109.28pt)
+ -- (403.18pt, -109.28pt)
+ -- (402.7pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(403.18pt, -109.76pt) -- (486.46pt, -109.76pt)
+ -- (486.46pt, -109.76pt)
+ -- (486.46pt, -109.28pt)
+ -- (486.46pt, -109.28pt)
+ -- (403.18pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -109.76pt) -- (486.94pt, -109.76pt)
+ -- (486.94pt, -109.76pt)
+ -- (486.94pt, -109.28pt)
+ -- (486.94pt, -109.28pt)
+ -- (486.46pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.94pt, -109.76pt) -- (570.24pt, -109.76pt)
+ -- (570.24pt, -109.76pt)
+ -- (570.24pt, -109.28pt)
+ -- (570.24pt, -109.28pt)
+ -- (486.94pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -109.76pt) -- (570.72pt, -109.76pt)
+ -- (570.72pt, -109.76pt)
+ -- (570.72pt, -109.28pt)
+ -- (570.72pt, -109.28pt)
+ -- (570.24pt, -109.28pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -127.84pt) -- (11.82pt, -127.84pt)
+ -- (11.82pt, -127.84pt)
+ -- (11.82pt, -109.76pt)
+ -- (11.82pt, -109.76pt)
+ -- (11.34pt, -109.76pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -127.84pt) -- (157.46pt, -127.84pt)
+ -- (157.46pt, -127.84pt)
+ -- (157.46pt, -109.76pt)
+ -- (157.46pt, -109.76pt)
+ -- (156.98pt, -109.76pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -127.84pt) -- (277.4pt, -127.84pt)
+ -- (277.4pt, -127.84pt)
+ -- (277.4pt, -109.76pt)
+ -- (277.4pt, -109.76pt)
+ -- (276.92pt, -109.76pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -127.84pt) -- (403.18pt, -127.84pt)
+ -- (403.18pt, -127.84pt)
+ -- (403.18pt, -109.76pt)
+ -- (403.18pt, -109.76pt)
+ -- (402.7pt, -109.76pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -127.84pt) -- (486.94pt, -127.84pt)
+ -- (486.94pt, -127.84pt)
+ -- (486.94pt, -109.76pt)
+ -- (486.94pt, -109.76pt)
+ -- (486.46pt, -109.76pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -127.84pt) -- (570.72pt, -127.84pt)
+ -- (570.72pt, -127.84pt)
+ -- (570.72pt, -109.76pt)
+ -- (570.72pt, -109.76pt)
+ -- (570.24pt, -109.76pt) -- cycle
+;
+\begin{scope}
+\clip
+(11.82pt, -143.2pt) -- (156.98pt, -143.2pt)
+ -- (156.98pt, -143.2pt)
+ -- (156.98pt, -128.32pt)
+ -- (156.98pt, -128.32pt)
+ -- (11.82pt, -128.32pt) -- cycle
+;
+\begin{scope}
+\clip
+(11.82pt, -143.2pt) -- (156.98pt, -143.2pt)
+ -- (156.98pt, -143.2pt)
+ -- (156.98pt, -128.32pt)
+ -- (156.98pt, -128.32pt)
+ -- (11.82pt, -128.32pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(16.98,-138.82){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Pre-Amp 20KHz 86.40mV 21.2v 245.37 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(2.34pt, -174.52pt) -- (579.72pt, -174.52pt)
+ -- (579.72pt, -174.52pt)
+ -- (579.72pt, -78.32001pt)
+ -- (579.72pt, -78.32001pt)
+ -- (2.34pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -128.32pt) -- (11.82pt, -128.32pt)
+ -- (11.82pt, -128.32pt)
+ -- (11.82pt, -127.84pt)
+ -- (11.82pt, -127.84pt)
+ -- (11.34pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.82pt, -128.32pt) -- (156.98pt, -128.32pt)
+ -- (156.98pt, -128.32pt)
+ -- (156.98pt, -127.84pt)
+ -- (156.98pt, -127.84pt)
+ -- (11.82pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -128.32pt) -- (157.46pt, -128.32pt)
+ -- (157.46pt, -128.32pt)
+ -- (157.46pt, -127.84pt)
+ -- (157.46pt, -127.84pt)
+ -- (156.98pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -128.32pt) -- (276.92pt, -128.32pt)
+ -- (276.92pt, -128.32pt)
+ -- (276.92pt, -127.84pt)
+ -- (276.92pt, -127.84pt)
+ -- (157.46pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -128.32pt) -- (277.4pt, -128.32pt)
+ -- (277.4pt, -128.32pt)
+ -- (277.4pt, -127.84pt)
+ -- (277.4pt, -127.84pt)
+ -- (276.92pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -128.32pt) -- (402.7pt, -128.32pt)
+ -- (402.7pt, -128.32pt)
+ -- (402.7pt, -127.84pt)
+ -- (402.7pt, -127.84pt)
+ -- (277.4pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -128.32pt) -- (403.18pt, -128.32pt)
+ -- (403.18pt, -128.32pt)
+ -- (403.18pt, -127.84pt)
+ -- (403.18pt, -127.84pt)
+ -- (402.7pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(403.18pt, -128.32pt) -- (486.46pt, -128.32pt)
+ -- (486.46pt, -128.32pt)
+ -- (486.46pt, -127.84pt)
+ -- (486.46pt, -127.84pt)
+ -- (403.18pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -128.32pt) -- (486.94pt, -128.32pt)
+ -- (486.94pt, -128.32pt)
+ -- (486.94pt, -127.84pt)
+ -- (486.94pt, -127.84pt)
+ -- (486.46pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.94pt, -128.32pt) -- (570.24pt, -128.32pt)
+ -- (570.24pt, -128.32pt)
+ -- (570.24pt, -127.84pt)
+ -- (570.24pt, -127.84pt)
+ -- (486.94pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -128.32pt) -- (570.72pt, -128.32pt)
+ -- (570.72pt, -128.32pt)
+ -- (570.72pt, -127.84pt)
+ -- (570.72pt, -127.84pt)
+ -- (570.24pt, -127.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -143.2pt) -- (11.82pt, -143.2pt)
+ -- (11.82pt, -143.2pt)
+ -- (11.82pt, -128.32pt)
+ -- (11.82pt, -128.32pt)
+ -- (11.34pt, -128.32pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -143.2pt) -- (157.46pt, -143.2pt)
+ -- (157.46pt, -143.2pt)
+ -- (157.46pt, -128.32pt)
+ -- (157.46pt, -128.32pt)
+ -- (156.98pt, -128.32pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -143.2pt) -- (277.4pt, -143.2pt)
+ -- (277.4pt, -143.2pt)
+ -- (277.4pt, -128.32pt)
+ -- (277.4pt, -128.32pt)
+ -- (276.92pt, -128.32pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -143.2pt) -- (403.18pt, -143.2pt)
+ -- (403.18pt, -143.2pt)
+ -- (403.18pt, -128.32pt)
+ -- (403.18pt, -128.32pt)
+ -- (402.7pt, -128.32pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -143.2pt) -- (486.94pt, -143.2pt)
+ -- (486.94pt, -143.2pt)
+ -- (486.94pt, -128.32pt)
+ -- (486.94pt, -128.32pt)
+ -- (486.46pt, -128.32pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -143.2pt) -- (570.72pt, -143.2pt)
+ -- (570.72pt, -143.2pt)
+ -- (570.72pt, -128.32pt)
+ -- (570.72pt, -128.32pt)
+ -- (570.24pt, -128.32pt) -- cycle
+;
+\begin{scope}
+\clip
+(11.82pt, -158.62pt) -- (156.98pt, -158.62pt)
+ -- (156.98pt, -158.62pt)
+ -- (156.98pt, -143.74pt)
+ -- (156.98pt, -143.74pt)
+ -- (11.82pt, -143.74pt) -- cycle
+;
+\begin{scope}
+\clip
+(11.82pt, -158.62pt) -- (156.98pt, -158.62pt)
+ -- (156.98pt, -158.62pt)
+ -- (156.98pt, -143.74pt)
+ -- (156.98pt, -143.74pt)
+ -- (11.82pt, -143.74pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(16.98,-154.18){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Mixer left Channel 20Hz 4.16mV 8.16v 1.961 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(2.34pt, -174.52pt) -- (579.72pt, -174.52pt)
+ -- (579.72pt, -174.52pt)
+ -- (579.72pt, -78.32001pt)
+ -- (579.72pt, -78.32001pt)
+ -- (2.34pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -143.68pt) -- (11.82pt, -143.68pt)
+ -- (11.82pt, -143.68pt)
+ -- (11.82pt, -143.2pt)
+ -- (11.82pt, -143.2pt)
+ -- (11.34pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.82pt, -143.68pt) -- (156.98pt, -143.68pt)
+ -- (156.98pt, -143.68pt)
+ -- (156.98pt, -143.2pt)
+ -- (156.98pt, -143.2pt)
+ -- (11.82pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -143.68pt) -- (157.46pt, -143.68pt)
+ -- (157.46pt, -143.68pt)
+ -- (157.46pt, -143.2pt)
+ -- (157.46pt, -143.2pt)
+ -- (156.98pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -143.68pt) -- (276.92pt, -143.68pt)
+ -- (276.92pt, -143.68pt)
+ -- (276.92pt, -143.2pt)
+ -- (276.92pt, -143.2pt)
+ -- (157.46pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -143.68pt) -- (277.4pt, -143.68pt)
+ -- (277.4pt, -143.68pt)
+ -- (277.4pt, -143.2pt)
+ -- (277.4pt, -143.2pt)
+ -- (276.92pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -143.68pt) -- (402.7pt, -143.68pt)
+ -- (402.7pt, -143.68pt)
+ -- (402.7pt, -143.2pt)
+ -- (402.7pt, -143.2pt)
+ -- (277.4pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -143.68pt) -- (403.18pt, -143.68pt)
+ -- (403.18pt, -143.68pt)
+ -- (403.18pt, -143.2pt)
+ -- (403.18pt, -143.2pt)
+ -- (402.7pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(403.18pt, -143.68pt) -- (486.46pt, -143.68pt)
+ -- (486.46pt, -143.68pt)
+ -- (486.46pt, -143.2pt)
+ -- (486.46pt, -143.2pt)
+ -- (403.18pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -143.68pt) -- (486.94pt, -143.68pt)
+ -- (486.94pt, -143.68pt)
+ -- (486.94pt, -143.2pt)
+ -- (486.94pt, -143.2pt)
+ -- (486.46pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.94pt, -143.68pt) -- (570.24pt, -143.68pt)
+ -- (570.24pt, -143.68pt)
+ -- (570.24pt, -143.2pt)
+ -- (570.24pt, -143.2pt)
+ -- (486.94pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -143.68pt) -- (570.72pt, -143.68pt)
+ -- (570.72pt, -143.68pt)
+ -- (570.72pt, -143.2pt)
+ -- (570.72pt, -143.2pt)
+ -- (570.24pt, -143.2pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -158.62pt) -- (11.82pt, -158.62pt)
+ -- (11.82pt, -158.62pt)
+ -- (11.82pt, -143.68pt)
+ -- (11.82pt, -143.68pt)
+ -- (11.34pt, -143.68pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -158.62pt) -- (157.46pt, -158.62pt)
+ -- (157.46pt, -158.62pt)
+ -- (157.46pt, -143.68pt)
+ -- (157.46pt, -143.68pt)
+ -- (156.98pt, -143.68pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -158.62pt) -- (277.4pt, -158.62pt)
+ -- (277.4pt, -158.62pt)
+ -- (277.4pt, -143.68pt)
+ -- (277.4pt, -143.68pt)
+ -- (276.92pt, -143.68pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -158.62pt) -- (403.18pt, -158.62pt)
+ -- (403.18pt, -158.62pt)
+ -- (403.18pt, -143.68pt)
+ -- (403.18pt, -143.68pt)
+ -- (402.7pt, -143.68pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -158.62pt) -- (486.94pt, -158.62pt)
+ -- (486.94pt, -158.62pt)
+ -- (486.94pt, -143.68pt)
+ -- (486.94pt, -143.68pt)
+ -- (486.46pt, -143.68pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -158.62pt) -- (570.72pt, -158.62pt)
+ -- (570.72pt, -158.62pt)
+ -- (570.72pt, -143.68pt)
+ -- (570.72pt, -143.68pt)
+ -- (570.24pt, -143.68pt) -- cycle
+;
+\begin{scope}
+\clip
+(11.82pt, -174.04pt) -- (156.98pt, -174.04pt)
+ -- (156.98pt, -174.04pt)
+ -- (156.98pt, -159.1pt)
+ -- (156.98pt, -159.1pt)
+ -- (11.82pt, -159.1pt) -- cycle
+;
+\begin{scope}
+\clip
+(11.82pt, -174.04pt) -- (156.98pt, -174.04pt)
+ -- (156.98pt, -174.04pt)
+ -- (156.98pt, -159.1pt)
+ -- (156.98pt, -159.1pt)
+ -- (11.82pt, -159.1pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(16.98,-169.6){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Mixer left Channel  20KHz 4.32mV 8.24v 1.907 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(2.34pt, -174.52pt) -- (579.72pt, -174.52pt)
+ -- (579.72pt, -174.52pt)
+ -- (579.72pt, -78.32001pt)
+ -- (579.72pt, -78.32001pt)
+ -- (2.34pt, -78.32001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -159.1pt) -- (11.82pt, -159.1pt)
+ -- (11.82pt, -159.1pt)
+ -- (11.82pt, -158.62pt)
+ -- (11.82pt, -158.62pt)
+ -- (11.34pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.82pt, -159.1pt) -- (156.98pt, -159.1pt)
+ -- (156.98pt, -159.1pt)
+ -- (156.98pt, -158.62pt)
+ -- (156.98pt, -158.62pt)
+ -- (11.82pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -159.1pt) -- (157.46pt, -159.1pt)
+ -- (157.46pt, -159.1pt)
+ -- (157.46pt, -158.62pt)
+ -- (157.46pt, -158.62pt)
+ -- (156.98pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -159.1pt) -- (276.92pt, -159.1pt)
+ -- (276.92pt, -159.1pt)
+ -- (276.92pt, -158.62pt)
+ -- (276.92pt, -158.62pt)
+ -- (157.46pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -159.1pt) -- (277.4pt, -159.1pt)
+ -- (277.4pt, -159.1pt)
+ -- (277.4pt, -158.62pt)
+ -- (277.4pt, -158.62pt)
+ -- (276.92pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -159.1pt) -- (402.7pt, -159.1pt)
+ -- (402.7pt, -159.1pt)
+ -- (402.7pt, -158.62pt)
+ -- (402.7pt, -158.62pt)
+ -- (277.4pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -159.1pt) -- (403.18pt, -159.1pt)
+ -- (403.18pt, -159.1pt)
+ -- (403.18pt, -158.62pt)
+ -- (403.18pt, -158.62pt)
+ -- (402.7pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(403.18pt, -159.1pt) -- (486.46pt, -159.1pt)
+ -- (486.46pt, -159.1pt)
+ -- (486.46pt, -158.62pt)
+ -- (486.46pt, -158.62pt)
+ -- (403.18pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -159.1pt) -- (486.94pt, -159.1pt)
+ -- (486.94pt, -159.1pt)
+ -- (486.94pt, -158.62pt)
+ -- (486.94pt, -158.62pt)
+ -- (486.46pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.94pt, -159.1pt) -- (570.24pt, -159.1pt)
+ -- (570.24pt, -159.1pt)
+ -- (570.24pt, -158.62pt)
+ -- (570.24pt, -158.62pt)
+ -- (486.94pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -159.1pt) -- (570.72pt, -159.1pt)
+ -- (570.72pt, -159.1pt)
+ -- (570.72pt, -158.62pt)
+ -- (570.72pt, -158.62pt)
+ -- (570.24pt, -158.62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -174.04pt) -- (11.82pt, -174.04pt)
+ -- (11.82pt, -174.04pt)
+ -- (11.82pt, -159.1pt)
+ -- (11.82pt, -159.1pt)
+ -- (11.34pt, -159.1pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -174.52pt) -- (11.82pt, -174.52pt)
+ -- (11.82pt, -174.52pt)
+ -- (11.82pt, -174.04pt)
+ -- (11.82pt, -174.04pt)
+ -- (11.34pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.34pt, -174.52pt) -- (11.82pt, -174.52pt)
+ -- (11.82pt, -174.52pt)
+ -- (11.82pt, -174.04pt)
+ -- (11.82pt, -174.04pt)
+ -- (11.34pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(11.82pt, -174.52pt) -- (156.98pt, -174.52pt)
+ -- (156.98pt, -174.52pt)
+ -- (156.98pt, -174.04pt)
+ -- (156.98pt, -174.04pt)
+ -- (11.82pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -174.04pt) -- (157.46pt, -174.04pt)
+ -- (157.46pt, -174.04pt)
+ -- (157.46pt, -159.1pt)
+ -- (157.46pt, -159.1pt)
+ -- (156.98pt, -159.1pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(156.98pt, -174.52pt) -- (157.46pt, -174.52pt)
+ -- (157.46pt, -174.52pt)
+ -- (157.46pt, -174.04pt)
+ -- (157.46pt, -174.04pt)
+ -- (156.98pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(157.46pt, -174.52pt) -- (276.92pt, -174.52pt)
+ -- (276.92pt, -174.52pt)
+ -- (276.92pt, -174.04pt)
+ -- (276.92pt, -174.04pt)
+ -- (157.46pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -174.04pt) -- (277.4pt, -174.04pt)
+ -- (277.4pt, -174.04pt)
+ -- (277.4pt, -159.1pt)
+ -- (277.4pt, -159.1pt)
+ -- (276.92pt, -159.1pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(276.92pt, -174.52pt) -- (277.4pt, -174.52pt)
+ -- (277.4pt, -174.52pt)
+ -- (277.4pt, -174.04pt)
+ -- (277.4pt, -174.04pt)
+ -- (276.92pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -174.52pt) -- (402.7pt, -174.52pt)
+ -- (402.7pt, -174.52pt)
+ -- (402.7pt, -174.04pt)
+ -- (402.7pt, -174.04pt)
+ -- (277.4pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -174.04pt) -- (403.18pt, -174.04pt)
+ -- (403.18pt, -174.04pt)
+ -- (403.18pt, -159.1pt)
+ -- (403.18pt, -159.1pt)
+ -- (402.7pt, -159.1pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(402.7pt, -174.52pt) -- (403.18pt, -174.52pt)
+ -- (403.18pt, -174.52pt)
+ -- (403.18pt, -174.04pt)
+ -- (403.18pt, -174.04pt)
+ -- (402.7pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(403.18pt, -174.52pt) -- (486.46pt, -174.52pt)
+ -- (486.46pt, -174.52pt)
+ -- (486.46pt, -174.04pt)
+ -- (486.46pt, -174.04pt)
+ -- (403.18pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -174.04pt) -- (486.94pt, -174.04pt)
+ -- (486.94pt, -174.04pt)
+ -- (486.94pt, -159.1pt)
+ -- (486.94pt, -159.1pt)
+ -- (486.46pt, -159.1pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.46pt, -174.52pt) -- (486.94pt, -174.52pt)
+ -- (486.94pt, -174.52pt)
+ -- (486.94pt, -174.04pt)
+ -- (486.94pt, -174.04pt)
+ -- (486.46pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(486.94pt, -174.52pt) -- (570.24pt, -174.52pt)
+ -- (570.24pt, -174.52pt)
+ -- (570.24pt, -174.04pt)
+ -- (570.24pt, -174.04pt)
+ -- (486.94pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -174.04pt) -- (570.72pt, -174.04pt)
+ -- (570.72pt, -174.04pt)
+ -- (570.72pt, -159.1pt)
+ -- (570.72pt, -159.1pt)
+ -- (570.24pt, -159.1pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -174.52pt) -- (570.72pt, -174.52pt)
+ -- (570.72pt, -174.52pt)
+ -- (570.72pt, -174.04pt)
+ -- (570.72pt, -174.04pt)
+ -- (570.24pt, -174.04pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(570.24pt, -174.52pt) -- (570.72pt, -174.52pt)
+ -- (570.72pt, -174.52pt)
+ -- (570.72pt, -174.04pt)
+ -- (570.72pt, -174.04pt)
+ -- (570.24pt, -174.04pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(-12pt, -439.44pt) -- (594.06pt, -439.44pt)
+ -- (594.06pt, -439.44pt)
+ -- (594.06pt, -200.02pt)
+ -- (594.06pt, -200.02pt)
+ -- (-12pt, -200.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(-2.52pt, -438.96pt) -- (268.82pt, -438.96pt)
+ -- (268.82pt, -438.96pt)
+ -- (268.82pt, -200.5pt)
+ -- (268.82pt, -200.5pt)
+ -- (-2.52pt, -200.5pt) -- cycle
+;
+\begin{scope}
+\clip
+(-2.52pt, -438.96pt) -- (268.82pt, -438.96pt)
+ -- (268.82pt, -438.96pt)
+ -- (268.82pt, -200.5pt)
+ -- (268.82pt, -200.5pt)
+ -- (-2.52pt, -200.5pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(2.639999,-211){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Pre-Amp  20Hz }
+\put(263.66,-405.96){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(274.46,-211){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Mixer left Channel  20Hz }
+\put(579.36,-438.96){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(-12pt, -439.44pt) -- (594.06pt, -439.44pt)
+ -- (594.06pt, -439.44pt)
+ -- (594.06pt, -200.02pt)
+ -- (594.06pt, -200.02pt)
+ -- (-12pt, -200.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-3pt, -200.5pt) -- (-2.52pt, -200.5pt)
+ -- (-2.52pt, -200.5pt)
+ -- (-2.52pt, -200.02pt)
+ -- (-2.52pt, -200.02pt)
+ -- (-3pt, -200.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-3pt, -200.5pt) -- (-2.52pt, -200.5pt)
+ -- (-2.52pt, -200.5pt)
+ -- (-2.52pt, -200.02pt)
+ -- (-2.52pt, -200.02pt)
+ -- (-3pt, -200.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-2.52pt, -200.5pt) -- (268.82pt, -200.5pt)
+ -- (268.82pt, -200.5pt)
+ -- (268.82pt, -200.02pt)
+ -- (268.82pt, -200.02pt)
+ -- (-2.52pt, -200.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(268.82pt, -200.5pt) -- (269.3pt, -200.5pt)
+ -- (269.3pt, -200.5pt)
+ -- (269.3pt, -200.02pt)
+ -- (269.3pt, -200.02pt)
+ -- (268.82pt, -200.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(269.3pt, -200.5pt) -- (584.58pt, -200.5pt)
+ -- (584.58pt, -200.5pt)
+ -- (584.58pt, -200.02pt)
+ -- (584.58pt, -200.02pt)
+ -- (269.3pt, -200.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(584.58pt, -200.5pt) -- (585.06pt, -200.5pt)
+ -- (585.06pt, -200.5pt)
+ -- (585.06pt, -200.02pt)
+ -- (585.06pt, -200.02pt)
+ -- (584.58pt, -200.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(584.58pt, -200.5pt) -- (585.06pt, -200.5pt)
+ -- (585.06pt, -200.5pt)
+ -- (585.06pt, -200.02pt)
+ -- (585.06pt, -200.02pt)
+ -- (584.58pt, -200.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-3pt, -438.96pt) -- (-2.52pt, -438.96pt)
+ -- (-2.52pt, -438.96pt)
+ -- (-2.52pt, -200.5pt)
+ -- (-2.52pt, -200.5pt)
+ -- (-3pt, -200.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-3pt, -439.44pt) -- (-2.52pt, -439.44pt)
+ -- (-2.52pt, -439.44pt)
+ -- (-2.52pt, -438.96pt)
+ -- (-2.52pt, -438.96pt)
+ -- (-3pt, -438.96pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-3pt, -439.44pt) -- (-2.52pt, -439.44pt)
+ -- (-2.52pt, -439.44pt)
+ -- (-2.52pt, -438.96pt)
+ -- (-2.52pt, -438.96pt)
+ -- (-3pt, -438.96pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(-2.52pt, -439.44pt) -- (268.82pt, -439.44pt)
+ -- (268.82pt, -439.44pt)
+ -- (268.82pt, -438.96pt)
+ -- (268.82pt, -438.96pt)
+ -- (-2.52pt, -438.96pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(268.82pt, -438.96pt) -- (269.3pt, -438.96pt)
+ -- (269.3pt, -438.96pt)
+ -- (269.3pt, -200.5pt)
+ -- (269.3pt, -200.5pt)
+ -- (268.82pt, -200.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(268.82pt, -439.44pt) -- (269.3pt, -439.44pt)
+ -- (269.3pt, -439.44pt)
+ -- (269.3pt, -438.96pt)
+ -- (269.3pt, -438.96pt)
+ -- (268.82pt, -438.96pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(269.3pt, -439.44pt) -- (584.58pt, -439.44pt)
+ -- (584.58pt, -439.44pt)
+ -- (584.58pt, -438.96pt)
+ -- (584.58pt, -438.96pt)
+ -- (269.3pt, -438.96pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(584.58pt, -438.96pt) -- (585.06pt, -438.96pt)
+ -- (585.06pt, -438.96pt)
+ -- (585.06pt, -200.5pt)
+ -- (585.06pt, -200.5pt)
+ -- (584.58pt, -200.5pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(584.58pt, -439.44pt) -- (585.06pt, -439.44pt)
+ -- (585.06pt, -439.44pt)
+ -- (585.06pt, -438.96pt)
+ -- (585.06pt, -438.96pt)
+ -- (584.58pt, -438.96pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(584.58pt, -439.44pt) -- (585.06pt, -439.44pt)
+ -- (585.06pt, -439.44pt)
+ -- (585.06pt, -438.96pt)
+ -- (585.06pt, -438.96pt)
+ -- (584.58pt, -438.96pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(2.65pt, -405.28pt) -- (263.31pt, -405.28pt)
+ -- (263.31pt, -405.28pt)
+ -- (263.31pt, -213.93pt)
+ -- (263.31pt, -213.93pt)
+ -- (2.65pt, -213.93pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(2.65,-405.28){\includegraphics[width=260.66pt,height=191.35pt]{latexImage_144bb13f20526335f7201d7c11f7801d.png}}
+\put(274.45,-438.38){\includegraphics[width=304.85pt,height=224.45pt]{latexImage_2b87c1d0b18842a6847d3dc361cb301a.png}}
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(50.82,-117.2){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(79.5,-97.52002){\fontsize{12}{1}\usefont{T1}{cmr}{b}{n}\selectfont\color{color_29791}Channel  }
+\put(144.56,-81.14001){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}풇(푯z)   }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.4pt, -93.56pt) -- (337pt, -93.56pt)
+ -- (337pt, -93.56pt)
+ -- (337pt, -69.73999pt)
+ -- (337pt, -69.73999pt)
+ -- (277.4pt, -69.73999pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(291.74pt, -84.44pt) -- (322.72pt, -84.44pt)
+ -- (322.72pt, -84.44pt)
+ -- (322.72pt, -69.73999pt)
+ -- (322.72pt, -69.73999pt)
+ -- (291.74pt, -69.73999pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.4pt, -93.56pt) -- (337pt, -93.56pt)
+ -- (337pt, -93.56pt)
+ -- (337pt, -69.73999pt)
+ -- (337pt, -69.73999pt)
+ -- (277.4pt, -69.73999pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(291.74,-81.14001){\fontsize{12}{1}\usefont{T1}{cmr}{b}{n}\selectfont\color{color_29791}Treble    }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(443.86pt, -93.56pt) -- (497.86pt, -93.56pt)
+ -- (497.86pt, -93.56pt)
+ -- (497.86pt, -69.73999pt)
+ -- (497.86pt, -69.73999pt)
+ -- (443.86pt, -69.73999pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(459.76pt, -84.44pt) -- (482.02pt, -84.44pt)
+ -- (482.02pt, -84.44pt)
+ -- (482.02pt, -69.73999pt)
+ -- (482.02pt, -69.73999pt)
+ -- (459.76pt, -69.73999pt) -- cycle
+;
+\begin{scope}
+\clip
+(443.86pt, -93.56pt) -- (497.86pt, -93.56pt)
+ -- (497.86pt, -93.56pt)
+ -- (497.86pt, -69.73999pt)
+ -- (497.86pt, -69.73999pt)
+ -- (443.86pt, -69.73999pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(459.76,-81.14001){\fontsize{12}{1}\usefont{T1}{cmr}{b}{n}\selectfont\color{color_29791}Bass   }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -69.73999pt) -- (30.06pt, -69.73999pt)
+ -- (30.06pt, -69.73999pt)
+ -- (30.06pt, -67.15997pt)
+ -- (30.06pt, -67.15997pt)
+ -- (29.58pt, -67.15997pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -67.64001pt) -- (30.06pt, -67.64001pt)
+ -- (30.06pt, -67.64001pt)
+ -- (30.06pt, -67.16003pt)
+ -- (30.06pt, -67.16003pt)
+ -- (29.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(30.06pt, -67.64001pt) -- (66.24001pt, -67.64001pt)
+ -- (66.24001pt, -67.64001pt)
+ -- (66.24001pt, -67.16003pt)
+ -- (66.24001pt, -67.16003pt)
+ -- (30.06pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -69.73999pt) -- (66.72pt, -69.73999pt)
+ -- (66.72pt, -69.73999pt)
+ -- (66.72pt, -67.64001pt)
+ -- (66.72pt, -67.64001pt)
+ -- (66.24pt, -67.64001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -67.64001pt) -- (66.72pt, -67.64001pt)
+ -- (66.72pt, -67.64001pt)
+ -- (66.72pt, -67.16003pt)
+ -- (66.72pt, -67.16003pt)
+ -- (66.24pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.72pt, -67.64001pt) -- (133.1pt, -67.64001pt)
+ -- (133.1pt, -67.64001pt)
+ -- (133.1pt, -67.16003pt)
+ -- (133.1pt, -67.16003pt)
+ -- (66.72pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -69.73999pt) -- (133.58pt, -69.73999pt)
+ -- (133.58pt, -69.73999pt)
+ -- (133.58pt, -67.64001pt)
+ -- (133.58pt, -67.64001pt)
+ -- (133.1pt, -67.64001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -67.64001pt) -- (133.58pt, -67.64001pt)
+ -- (133.58pt, -67.64001pt)
+ -- (133.58pt, -67.16003pt)
+ -- (133.58pt, -67.16003pt)
+ -- (133.1pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.58pt, -67.64001pt) -- (187.1pt, -67.64001pt)
+ -- (187.1pt, -67.64001pt)
+ -- (187.1pt, -67.16003pt)
+ -- (187.1pt, -67.16003pt)
+ -- (133.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -69.73999pt) -- (187.58pt, -69.73999pt)
+ -- (187.58pt, -69.73999pt)
+ -- (187.58pt, -67.64001pt)
+ -- (187.58pt, -67.64001pt)
+ -- (187.1pt, -67.64001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -67.64001pt) -- (187.58pt, -67.64001pt)
+ -- (187.58pt, -67.64001pt)
+ -- (187.58pt, -67.16003pt)
+ -- (187.58pt, -67.16003pt)
+ -- (187.1pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.58pt, -67.64001pt) -- (277.4pt, -67.64001pt)
+ -- (277.4pt, -67.64001pt)
+ -- (277.4pt, -67.16003pt)
+ -- (277.4pt, -67.16003pt)
+ -- (187.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.4pt, -67.64001pt) -- (277.88pt, -67.64001pt)
+ -- (277.88pt, -67.64001pt)
+ -- (277.88pt, -67.16003pt)
+ -- (277.88pt, -67.16003pt)
+ -- (277.4pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.88pt, -67.64001pt) -- (337pt, -67.64001pt)
+ -- (337pt, -67.64001pt)
+ -- (337pt, -67.16003pt)
+ -- (337pt, -67.16003pt)
+ -- (277.88pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(337pt, -67.64001pt) -- (337.48pt, -67.64001pt)
+ -- (337.48pt, -67.64001pt)
+ -- (337.48pt, -67.16003pt)
+ -- (337.48pt, -67.16003pt)
+ -- (337pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(337.48pt, -67.64001pt) -- (398.62pt, -67.64001pt)
+ -- (398.62pt, -67.64001pt)
+ -- (398.62pt, -67.16003pt)
+ -- (398.62pt, -67.16003pt)
+ -- (337.48pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -69.73999pt) -- (399.1pt, -69.73999pt)
+ -- (399.1pt, -69.73999pt)
+ -- (399.1pt, -67.64001pt)
+ -- (399.1pt, -67.64001pt)
+ -- (398.62pt, -67.64001pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -67.64001pt) -- (399.1pt, -67.64001pt)
+ -- (399.1pt, -67.64001pt)
+ -- (399.1pt, -67.16003pt)
+ -- (399.1pt, -67.16003pt)
+ -- (398.62pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(399.1pt, -67.64001pt) -- (443.86pt, -67.64001pt)
+ -- (443.86pt, -67.64001pt)
+ -- (443.86pt, -67.16003pt)
+ -- (443.86pt, -67.16003pt)
+ -- (399.1pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.86pt, -67.64001pt) -- (444.34pt, -67.64001pt)
+ -- (444.34pt, -67.64001pt)
+ -- (444.34pt, -67.16003pt)
+ -- (444.34pt, -67.16003pt)
+ -- (443.86pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(444.34pt, -67.64001pt) -- (497.86pt, -67.64001pt)
+ -- (497.86pt, -67.64001pt)
+ -- (497.86pt, -67.16003pt)
+ -- (497.86pt, -67.16003pt)
+ -- (444.34pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.86pt, -67.64001pt) -- (498.34pt, -67.64001pt)
+ -- (498.34pt, -67.64001pt)
+ -- (498.34pt, -67.16003pt)
+ -- (498.34pt, -67.16003pt)
+ -- (497.86pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(498.34pt, -67.64001pt) -- (552pt, -67.64001pt)
+ -- (552pt, -67.64001pt)
+ -- (552pt, -67.16003pt)
+ -- (552pt, -67.16003pt)
+ -- (498.34pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -69.73999pt) -- (552.48pt, -69.73999pt)
+ -- (552.48pt, -69.73999pt)
+ -- (552.48pt, -67.15997pt)
+ -- (552.48pt, -67.15997pt)
+ -- (552pt, -67.15997pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -67.64001pt) -- (552.48pt, -67.64001pt)
+ -- (552.48pt, -67.64001pt)
+ -- (552.48pt, -67.16003pt)
+ -- (552.48pt, -67.16003pt)
+ -- (552pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -100.58pt) -- (30.06pt, -100.58pt)
+ -- (30.06pt, -100.58pt)
+ -- (30.06pt, -69.73999pt)
+ -- (30.06pt, -69.73999pt)
+ -- (29.58pt, -69.73999pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -100.58pt) -- (66.72pt, -100.58pt)
+ -- (66.72pt, -100.58pt)
+ -- (66.72pt, -69.73999pt)
+ -- (66.72pt, -69.73999pt)
+ -- (66.24pt, -69.73999pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -100.58pt) -- (133.58pt, -100.58pt)
+ -- (133.58pt, -100.58pt)
+ -- (133.58pt, -69.73999pt)
+ -- (133.58pt, -69.73999pt)
+ -- (133.1pt, -69.73999pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -100.58pt) -- (187.58pt, -100.58pt)
+ -- (187.58pt, -100.58pt)
+ -- (187.58pt, -69.73999pt)
+ -- (187.58pt, -69.73999pt)
+ -- (187.1pt, -69.73999pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -100.58pt) -- (399.1pt, -100.58pt)
+ -- (399.1pt, -100.58pt)
+ -- (399.1pt, -69.73999pt)
+ -- (399.1pt, -69.73999pt)
+ -- (398.62pt, -69.73999pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -100.58pt) -- (552.48pt, -100.58pt)
+ -- (552.48pt, -100.58pt)
+ -- (552.48pt, -69.73999pt)
+ -- (552.48pt, -69.73999pt)
+ -- (552pt, -69.73999pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -118.34pt) -- (277.16pt, -118.34pt)
+ -- (277.16pt, -118.34pt)
+ -- (277.16pt, -103.16pt)
+ -- (277.16pt, -103.16pt)
+ -- (187.58pt, -103.16pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -118.34pt) -- (277.16pt, -118.34pt)
+ -- (277.16pt, -118.34pt)
+ -- (277.16pt, -103.16pt)
+ -- (277.16pt, -103.16pt)
+ -- (187.58pt, -103.16pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(224.54,-114.56){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}푽}
+\put(232.34,-115.04){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}풊n}
+\put(239.72,-114.56){\fontsize{12}{1}\usefont{T1}{cmr}{b}{n}\selectfont\color{color_29791}  푽풐ut |푨}
+\put(366.88,-115.04){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}풅B}
+\put(376.9,-114.56){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}|  푽}
+\put(421.36,-115.04){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}풊n}
+\put(428.8,-114.56){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} 푽풐ut |푨}
+\put(523.92,-115.04){\fontsize{7.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}풅B}
+\put(533.94,-114.56){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}|  }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -103.16pt) -- (30.06pt, -103.16pt)
+ -- (30.06pt, -103.16pt)
+ -- (30.06pt, -100.58pt)
+ -- (30.06pt, -100.58pt)
+ -- (29.58pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -103.16pt) -- (66.72pt, -103.16pt)
+ -- (66.72pt, -103.16pt)
+ -- (66.72pt, -100.58pt)
+ -- (66.72pt, -100.58pt)
+ -- (66.24pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -103.16pt) -- (133.58pt, -103.16pt)
+ -- (133.58pt, -103.16pt)
+ -- (133.58pt, -100.58pt)
+ -- (133.58pt, -100.58pt)
+ -- (133.1pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -103.16pt) -- (187.58pt, -103.16pt)
+ -- (187.58pt, -103.16pt)
+ -- (187.58pt, -100.58pt)
+ -- (187.58pt, -100.58pt)
+ -- (187.1pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.58pt, -101.06pt) -- (277.16pt, -101.06pt)
+ -- (277.16pt, -101.06pt)
+ -- (277.16pt, -100.58pt)
+ -- (277.16pt, -100.58pt)
+ -- (187.58pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -103.16pt) -- (277.64pt, -103.16pt)
+ -- (277.64pt, -103.16pt)
+ -- (277.64pt, -101.06pt)
+ -- (277.64pt, -101.06pt)
+ -- (277.16pt, -101.06pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -101.06pt) -- (277.64pt, -101.06pt)
+ -- (277.64pt, -101.06pt)
+ -- (277.64pt, -100.58pt)
+ -- (277.64pt, -100.58pt)
+ -- (277.16pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.64pt, -101.06pt) -- (278.12pt, -101.06pt)
+ -- (278.12pt, -101.06pt)
+ -- (278.12pt, -100.58pt)
+ -- (278.12pt, -100.58pt)
+ -- (277.64pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(278.12pt, -101.06pt) -- (336.76pt, -101.06pt)
+ -- (336.76pt, -101.06pt)
+ -- (336.76pt, -100.58pt)
+ -- (336.76pt, -100.58pt)
+ -- (278.12pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -103.16pt) -- (337.24pt, -103.16pt)
+ -- (337.24pt, -103.16pt)
+ -- (337.24pt, -100.58pt)
+ -- (337.24pt, -100.58pt)
+ -- (336.76pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -101.06pt) -- (337.24pt, -101.06pt)
+ -- (337.24pt, -101.06pt)
+ -- (337.24pt, -100.58pt)
+ -- (337.24pt, -100.58pt)
+ -- (336.76pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -103.16pt) -- (399.1pt, -103.16pt)
+ -- (399.1pt, -103.16pt)
+ -- (399.1pt, -100.58pt)
+ -- (399.1pt, -100.58pt)
+ -- (398.62pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(399.1pt, -101.06pt) -- (443.62pt, -101.06pt)
+ -- (443.62pt, -101.06pt)
+ -- (443.62pt, -100.58pt)
+ -- (443.62pt, -100.58pt)
+ -- (399.1pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -103.16pt) -- (444.1pt, -103.16pt)
+ -- (444.1pt, -103.16pt)
+ -- (444.1pt, -101.06pt)
+ -- (444.1pt, -101.06pt)
+ -- (443.62pt, -101.06pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -101.06pt) -- (444.1pt, -101.06pt)
+ -- (444.1pt, -101.06pt)
+ -- (444.1pt, -100.58pt)
+ -- (444.1pt, -100.58pt)
+ -- (443.62pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(444.1pt, -101.06pt) -- (444.58pt, -101.06pt)
+ -- (444.58pt, -101.06pt)
+ -- (444.58pt, -100.58pt)
+ -- (444.58pt, -100.58pt)
+ -- (444.1pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(444.58pt, -101.06pt) -- (497.62pt, -101.06pt)
+ -- (497.62pt, -101.06pt)
+ -- (497.62pt, -100.58pt)
+ -- (497.62pt, -100.58pt)
+ -- (444.58pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -103.16pt) -- (498.1pt, -103.16pt)
+ -- (498.1pt, -103.16pt)
+ -- (498.1pt, -101.06pt)
+ -- (498.1pt, -101.06pt)
+ -- (497.62pt, -101.06pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -101.06pt) -- (498.1pt, -101.06pt)
+ -- (498.1pt, -101.06pt)
+ -- (498.1pt, -100.58pt)
+ -- (498.1pt, -100.58pt)
+ -- (497.62pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(498.1pt, -101.06pt) -- (498.58pt, -101.06pt)
+ -- (498.58pt, -101.06pt)
+ -- (498.58pt, -100.58pt)
+ -- (498.58pt, -100.58pt)
+ -- (498.1pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(498.58pt, -101.06pt) -- (552pt, -101.06pt)
+ -- (552pt, -101.06pt)
+ -- (552pt, -100.58pt)
+ -- (552pt, -100.58pt)
+ -- (498.58pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -103.16pt) -- (552.48pt, -103.16pt)
+ -- (552.48pt, -103.16pt)
+ -- (552.48pt, -100.58pt)
+ -- (552.48pt, -100.58pt)
+ -- (552pt, -100.58pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -125.38pt) -- (30.06pt, -125.38pt)
+ -- (30.06pt, -125.38pt)
+ -- (30.06pt, -103.16pt)
+ -- (30.06pt, -103.16pt)
+ -- (29.58pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -125.38pt) -- (66.72pt, -125.38pt)
+ -- (66.72pt, -125.38pt)
+ -- (66.72pt, -103.16pt)
+ -- (66.72pt, -103.16pt)
+ -- (66.24pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -125.38pt) -- (133.58pt, -125.38pt)
+ -- (133.58pt, -125.38pt)
+ -- (133.58pt, -103.16pt)
+ -- (133.58pt, -103.16pt)
+ -- (133.1pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -125.38pt) -- (187.58pt, -125.38pt)
+ -- (187.58pt, -125.38pt)
+ -- (187.58pt, -103.16pt)
+ -- (187.58pt, -103.16pt)
+ -- (187.1pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -125.38pt) -- (277.64pt, -125.38pt)
+ -- (277.64pt, -125.38pt)
+ -- (277.64pt, -103.16pt)
+ -- (277.64pt, -103.16pt)
+ -- (277.16pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -125.38pt) -- (337.24pt, -125.38pt)
+ -- (337.24pt, -125.38pt)
+ -- (337.24pt, -103.16pt)
+ -- (337.24pt, -103.16pt)
+ -- (336.76pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -125.38pt) -- (399.1pt, -125.38pt)
+ -- (399.1pt, -125.38pt)
+ -- (399.1pt, -103.16pt)
+ -- (399.1pt, -103.16pt)
+ -- (398.62pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -125.38pt) -- (444.1pt, -125.38pt)
+ -- (444.1pt, -125.38pt)
+ -- (444.1pt, -103.16pt)
+ -- (444.1pt, -103.16pt)
+ -- (443.62pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -125.38pt) -- (498.1pt, -125.38pt)
+ -- (498.1pt, -125.38pt)
+ -- (498.1pt, -103.16pt)
+ -- (498.1pt, -103.16pt)
+ -- (497.62pt, -103.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -125.38pt) -- (552.48pt, -125.38pt)
+ -- (552.48pt, -125.38pt)
+ -- (552.48pt, -103.16pt)
+ -- (552.48pt, -103.16pt)
+ -- (552pt, -103.16pt) -- cycle
+;
+\begin{scope}
+\clip
+(30.06pt, -194.44pt) -- (66.24001pt, -194.44pt)
+ -- (66.24001pt, -194.44pt)
+ -- (66.24001pt, -128.98pt)
+ -- (66.24001pt, -128.98pt)
+ -- (30.06pt, -128.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(30.06pt, -194.44pt) -- (66.24001pt, -194.44pt)
+ -- (66.24001pt, -194.44pt)
+ -- (66.24001pt, -128.98pt)
+ -- (66.24001pt, -128.98pt)
+ -- (30.06pt, -128.98pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(51.24,-159.82){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(90.5,-165.16){\fontsize{12}{1}\usefont{T1}{cmr}{b}{n}\selectfont\color{color_29791}Left  }
+\put(143.18,-140.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}ퟐ0Hz  }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -157.42pt) -- (277.16pt, -157.42pt)
+ -- (277.16pt, -157.42pt)
+ -- (277.16pt, -128.98pt)
+ -- (277.16pt, -128.98pt)
+ -- (187.58pt, -128.98pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(220.16pt, -143.62pt) -- (246.86pt, -143.62pt)
+ -- (246.86pt, -143.62pt)
+ -- (246.86pt, -128.98pt)
+ -- (246.86pt, -128.98pt)
+ -- (220.16pt, -128.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -157.42pt) -- (277.16pt, -157.42pt)
+ -- (277.16pt, -157.42pt)
+ -- (277.16pt, -128.98pt)
+ -- (277.16pt, -128.98pt)
+ -- (187.58pt, -128.98pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(220.16,-140.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.16v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.64pt, -157.42pt) -- (336.76pt, -157.42pt)
+ -- (336.76pt, -157.42pt)
+ -- (336.76pt, -128.98pt)
+ -- (336.76pt, -128.98pt)
+ -- (277.64pt, -128.98pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(300.8pt, -143.62pt) -- (316pt, -143.62pt)
+ -- (316pt, -143.62pt)
+ -- (316pt, -128.98pt)
+ -- (316pt, -128.98pt)
+ -- (300.8pt, -128.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.64pt, -157.42pt) -- (336.76pt, -157.42pt)
+ -- (336.76pt, -157.42pt)
+ -- (336.76pt, -128.98pt)
+ -- (336.76pt, -128.98pt)
+ -- (277.64pt, -128.98pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(300.8,-140.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.8 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(337.24pt, -157.42pt) -- (398.62pt, -157.42pt)
+ -- (398.62pt, -157.42pt)
+ -- (398.62pt, -128.98pt)
+ -- (398.62pt, -128.98pt)
+ -- (337.24pt, -128.98pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(355.36pt, -143.62pt) -- (382.72pt, -143.62pt)
+ -- (382.72pt, -143.62pt)
+ -- (382.72pt, -128.98pt)
+ -- (382.72pt, -128.98pt)
+ -- (355.36pt, -128.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(337.24pt, -157.42pt) -- (398.62pt, -157.42pt)
+ -- (398.62pt, -157.42pt)
+ -- (398.62pt, -128.98pt)
+ -- (398.62pt, -128.98pt)
+ -- (337.24pt, -128.98pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(355.36,-140.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}0.981 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(399.1pt, -157.42pt) -- (443.62pt, -157.42pt)
+ -- (443.62pt, -157.42pt)
+ -- (443.62pt, -128.98pt)
+ -- (443.62pt, -128.98pt)
+ -- (399.1pt, -128.98pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(409.18pt, -143.62pt) -- (435.88pt, -143.62pt)
+ -- (435.88pt, -143.62pt)
+ -- (435.88pt, -128.98pt)
+ -- (435.88pt, -128.98pt)
+ -- (409.18pt, -128.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(399.1pt, -157.42pt) -- (443.62pt, -157.42pt)
+ -- (443.62pt, -157.42pt)
+ -- (443.62pt, -128.98pt)
+ -- (443.62pt, -128.98pt)
+ -- (399.1pt, -128.98pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(409.18,-140.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.24v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(444.1pt, -157.42pt) -- (497.62pt, -157.42pt)
+ -- (497.62pt, -157.42pt)
+ -- (497.62pt, -128.98pt)
+ -- (497.62pt, -128.98pt)
+ -- (444.1pt, -128.98pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(458.62pt, -143.62pt) -- (485.32pt, -143.62pt)
+ -- (485.32pt, -143.62pt)
+ -- (485.32pt, -128.98pt)
+ -- (485.32pt, -128.98pt)
+ -- (458.62pt, -128.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(444.1pt, -157.42pt) -- (497.62pt, -157.42pt)
+ -- (497.62pt, -157.42pt)
+ -- (497.62pt, -128.98pt)
+ -- (497.62pt, -128.98pt)
+ -- (444.1pt, -128.98pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(458.62,-140.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}1.44v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(498.1pt, -157.42pt) -- (552pt, -157.42pt)
+ -- (552pt, -157.42pt)
+ -- (552pt, -128.98pt)
+ -- (552pt, -128.98pt)
+ -- (498.1pt, -128.98pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(512.38pt, -143.62pt) -- (539.76pt, -143.62pt)
+ -- (539.76pt, -143.62pt)
+ -- (539.76pt, -128.98pt)
+ -- (539.76pt, -128.98pt)
+ -- (512.38pt, -128.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(498.1pt, -157.42pt) -- (552pt, -157.42pt)
+ -- (552pt, -157.42pt)
+ -- (552pt, -128.98pt)
+ -- (552pt, -128.98pt)
+ -- (498.1pt, -128.98pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(512.38,-140.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}0.340 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -128.98pt) -- (30.06pt, -128.98pt)
+ -- (30.06pt, -128.98pt)
+ -- (30.06pt, -125.38pt)
+ -- (30.06pt, -125.38pt)
+ -- (29.58pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(30.06pt, -126.88pt) -- (66.24001pt, -126.88pt)
+ -- (66.24001pt, -126.88pt)
+ -- (66.24001pt, -125.38pt)
+ -- (66.24001pt, -125.38pt)
+ -- (30.06pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -128.98pt) -- (66.72pt, -128.98pt)
+ -- (66.72pt, -128.98pt)
+ -- (66.72pt, -126.88pt)
+ -- (66.72pt, -126.88pt)
+ -- (66.24pt, -126.88pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -126.88pt) -- (67.74pt, -126.88pt)
+ -- (67.74pt, -126.88pt)
+ -- (67.74pt, -125.38pt)
+ -- (67.74pt, -125.38pt)
+ -- (66.24pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(67.74pt, -126.88pt) -- (133.1pt, -126.88pt)
+ -- (133.1pt, -126.88pt)
+ -- (133.1pt, -125.38pt)
+ -- (133.1pt, -125.38pt)
+ -- (67.74pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -128.98pt) -- (133.58pt, -128.98pt)
+ -- (133.58pt, -128.98pt)
+ -- (133.58pt, -126.88pt)
+ -- (133.58pt, -126.88pt)
+ -- (133.1pt, -126.88pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -126.88pt) -- (134.6pt, -126.88pt)
+ -- (134.6pt, -126.88pt)
+ -- (134.6pt, -125.38pt)
+ -- (134.6pt, -125.38pt)
+ -- (133.1pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(134.6pt, -126.88pt) -- (187.1pt, -126.88pt)
+ -- (187.1pt, -126.88pt)
+ -- (187.1pt, -125.38pt)
+ -- (187.1pt, -125.38pt)
+ -- (134.6pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -128.98pt) -- (187.58pt, -128.98pt)
+ -- (187.58pt, -128.98pt)
+ -- (187.58pt, -126.88pt)
+ -- (187.58pt, -126.88pt)
+ -- (187.1pt, -126.88pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -126.88pt) -- (188.6pt, -126.88pt)
+ -- (188.6pt, -126.88pt)
+ -- (188.6pt, -125.38pt)
+ -- (188.6pt, -125.38pt)
+ -- (187.1pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(188.6pt, -126.88pt) -- (277.16pt, -126.88pt)
+ -- (277.16pt, -126.88pt)
+ -- (277.16pt, -125.38pt)
+ -- (277.16pt, -125.38pt)
+ -- (188.6pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -128.98pt) -- (277.64pt, -128.98pt)
+ -- (277.64pt, -128.98pt)
+ -- (277.64pt, -126.88pt)
+ -- (277.64pt, -126.88pt)
+ -- (277.16pt, -126.88pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -126.88pt) -- (278.66pt, -126.88pt)
+ -- (278.66pt, -126.88pt)
+ -- (278.66pt, -125.38pt)
+ -- (278.66pt, -125.38pt)
+ -- (277.16pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(278.66pt, -126.88pt) -- (336.76pt, -126.88pt)
+ -- (336.76pt, -126.88pt)
+ -- (336.76pt, -125.38pt)
+ -- (336.76pt, -125.38pt)
+ -- (278.66pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -128.98pt) -- (337.24pt, -128.98pt)
+ -- (337.24pt, -128.98pt)
+ -- (337.24pt, -126.88pt)
+ -- (337.24pt, -126.88pt)
+ -- (336.76pt, -126.88pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -126.88pt) -- (338.26pt, -126.88pt)
+ -- (338.26pt, -126.88pt)
+ -- (338.26pt, -125.38pt)
+ -- (338.26pt, -125.38pt)
+ -- (336.76pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(338.26pt, -126.88pt) -- (398.62pt, -126.88pt)
+ -- (398.62pt, -126.88pt)
+ -- (398.62pt, -125.38pt)
+ -- (398.62pt, -125.38pt)
+ -- (338.26pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -128.98pt) -- (399.1pt, -128.98pt)
+ -- (399.1pt, -128.98pt)
+ -- (399.1pt, -126.88pt)
+ -- (399.1pt, -126.88pt)
+ -- (398.62pt, -126.88pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -126.88pt) -- (400.12pt, -126.88pt)
+ -- (400.12pt, -126.88pt)
+ -- (400.12pt, -125.38pt)
+ -- (400.12pt, -125.38pt)
+ -- (398.62pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(400.12pt, -126.88pt) -- (443.62pt, -126.88pt)
+ -- (443.62pt, -126.88pt)
+ -- (443.62pt, -125.38pt)
+ -- (443.62pt, -125.38pt)
+ -- (400.12pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -128.98pt) -- (444.1pt, -128.98pt)
+ -- (444.1pt, -128.98pt)
+ -- (444.1pt, -126.88pt)
+ -- (444.1pt, -126.88pt)
+ -- (443.62pt, -126.88pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -126.88pt) -- (445.12pt, -126.88pt)
+ -- (445.12pt, -126.88pt)
+ -- (445.12pt, -125.38pt)
+ -- (445.12pt, -125.38pt)
+ -- (443.62pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(445.12pt, -126.88pt) -- (497.62pt, -126.88pt)
+ -- (497.62pt, -126.88pt)
+ -- (497.62pt, -125.38pt)
+ -- (497.62pt, -125.38pt)
+ -- (445.12pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -128.98pt) -- (498.1pt, -128.98pt)
+ -- (498.1pt, -128.98pt)
+ -- (498.1pt, -126.88pt)
+ -- (498.1pt, -126.88pt)
+ -- (497.62pt, -126.88pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -126.88pt) -- (499.12pt, -126.88pt)
+ -- (499.12pt, -126.88pt)
+ -- (499.12pt, -125.38pt)
+ -- (499.12pt, -125.38pt)
+ -- (497.62pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(499.12pt, -126.88pt) -- (552pt, -126.88pt)
+ -- (552pt, -126.88pt)
+ -- (552pt, -125.38pt)
+ -- (552pt, -125.38pt)
+ -- (499.12pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -128.98pt) -- (552.48pt, -128.98pt)
+ -- (552.48pt, -128.98pt)
+ -- (552.48pt, -125.38pt)
+ -- (552.48pt, -125.38pt)
+ -- (552pt, -125.38pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -164.44pt) -- (30.06pt, -164.44pt)
+ -- (30.06pt, -164.44pt)
+ -- (30.06pt, -128.98pt)
+ -- (30.06pt, -128.98pt)
+ -- (29.58pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -164.44pt) -- (66.72pt, -164.44pt)
+ -- (66.72pt, -164.44pt)
+ -- (66.72pt, -128.98pt)
+ -- (66.72pt, -128.98pt)
+ -- (66.24pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -164.44pt) -- (133.58pt, -164.44pt)
+ -- (133.58pt, -164.44pt)
+ -- (133.58pt, -128.98pt)
+ -- (133.58pt, -128.98pt)
+ -- (133.1pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -164.44pt) -- (187.58pt, -164.44pt)
+ -- (187.58pt, -164.44pt)
+ -- (187.58pt, -128.98pt)
+ -- (187.58pt, -128.98pt)
+ -- (187.1pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -164.44pt) -- (277.64pt, -164.44pt)
+ -- (277.64pt, -164.44pt)
+ -- (277.64pt, -128.98pt)
+ -- (277.64pt, -128.98pt)
+ -- (277.16pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -164.44pt) -- (337.24pt, -164.44pt)
+ -- (337.24pt, -164.44pt)
+ -- (337.24pt, -128.98pt)
+ -- (337.24pt, -128.98pt)
+ -- (336.76pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -164.44pt) -- (399.1pt, -164.44pt)
+ -- (399.1pt, -164.44pt)
+ -- (399.1pt, -128.98pt)
+ -- (399.1pt, -128.98pt)
+ -- (398.62pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -164.44pt) -- (444.1pt, -164.44pt)
+ -- (444.1pt, -164.44pt)
+ -- (444.1pt, -128.98pt)
+ -- (444.1pt, -128.98pt)
+ -- (443.62pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -164.44pt) -- (498.1pt, -164.44pt)
+ -- (498.1pt, -164.44pt)
+ -- (498.1pt, -128.98pt)
+ -- (498.1pt, -128.98pt)
+ -- (497.62pt, -128.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -164.44pt) -- (552.48pt, -164.44pt)
+ -- (552.48pt, -164.44pt)
+ -- (552.48pt, -128.98pt)
+ -- (552.48pt, -128.98pt)
+ -- (552pt, -128.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(133.58pt, -194.44pt) -- (187.1pt, -194.44pt)
+ -- (187.1pt, -194.44pt)
+ -- (187.1pt, -167.02pt)
+ -- (187.1pt, -167.02pt)
+ -- (133.58pt, -167.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(133.58pt, -194.44pt) -- (187.1pt, -194.44pt)
+ -- (187.1pt, -194.44pt)
+ -- (187.1pt, -167.02pt)
+ -- (187.1pt, -167.02pt)
+ -- (133.58pt, -167.02pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(144.14,-178.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}ퟐ0KHz }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -194.44pt) -- (277.16pt, -194.44pt)
+ -- (277.16pt, -194.44pt)
+ -- (277.16pt, -167.02pt)
+ -- (277.16pt, -167.02pt)
+ -- (187.58pt, -167.02pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(220.16pt, -181.66pt) -- (246.86pt, -181.66pt)
+ -- (246.86pt, -181.66pt)
+ -- (246.86pt, -167.02pt)
+ -- (246.86pt, -167.02pt)
+ -- (220.16pt, -167.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -194.44pt) -- (277.16pt, -194.44pt)
+ -- (277.16pt, -194.44pt)
+ -- (277.16pt, -167.02pt)
+ -- (277.16pt, -167.02pt)
+ -- (187.58pt, -167.02pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(220.16,-178.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.24v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.64pt, -194.44pt) -- (336.76pt, -194.44pt)
+ -- (336.76pt, -194.44pt)
+ -- (336.76pt, -167.02pt)
+ -- (336.76pt, -167.02pt)
+ -- (277.64pt, -167.02pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(295.04pt, -181.66pt) -- (321.76pt, -181.66pt)
+ -- (321.76pt, -181.66pt)
+ -- (321.76pt, -167.02pt)
+ -- (321.76pt, -167.02pt)
+ -- (295.04pt, -167.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.64pt, -194.44pt) -- (336.76pt, -194.44pt)
+ -- (336.76pt, -194.44pt)
+ -- (336.76pt, -167.02pt)
+ -- (336.76pt, -167.02pt)
+ -- (277.64pt, -167.02pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(295.04,-178.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}1.20v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(337.24pt, -194.44pt) -- (398.62pt, -194.44pt)
+ -- (398.62pt, -194.44pt)
+ -- (398.62pt, -167.02pt)
+ -- (398.62pt, -167.02pt)
+ -- (337.24pt, -167.02pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(355.36pt, -181.66pt) -- (382.72pt, -181.66pt)
+ -- (382.72pt, -181.66pt)
+ -- (382.72pt, -167.02pt)
+ -- (382.72pt, -167.02pt)
+ -- (355.36pt, -167.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(337.24pt, -194.44pt) -- (398.62pt, -194.44pt)
+ -- (398.62pt, -194.44pt)
+ -- (398.62pt, -167.02pt)
+ -- (398.62pt, -167.02pt)
+ -- (337.24pt, -167.02pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(355.36,-178.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}0.283 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(399.1pt, -194.44pt) -- (443.62pt, -194.44pt)
+ -- (443.62pt, -194.44pt)
+ -- (443.62pt, -167.02pt)
+ -- (443.62pt, -167.02pt)
+ -- (399.1pt, -167.02pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(409.18pt, -181.66pt) -- (435.88pt, -181.66pt)
+ -- (435.88pt, -181.66pt)
+ -- (435.88pt, -167.02pt)
+ -- (435.88pt, -167.02pt)
+ -- (409.18pt, -167.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(399.1pt, -194.44pt) -- (443.62pt, -194.44pt)
+ -- (443.62pt, -194.44pt)
+ -- (443.62pt, -167.02pt)
+ -- (443.62pt, -167.02pt)
+ -- (399.1pt, -167.02pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(409.18,-178.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.24v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(444.1pt, -194.44pt) -- (497.62pt, -194.44pt)
+ -- (497.62pt, -194.44pt)
+ -- (497.62pt, -167.02pt)
+ -- (497.62pt, -167.02pt)
+ -- (444.1pt, -167.02pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(458.62pt, -181.66pt) -- (485.32pt, -181.66pt)
+ -- (485.32pt, -181.66pt)
+ -- (485.32pt, -167.02pt)
+ -- (485.32pt, -167.02pt)
+ -- (458.62pt, -167.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(444.1pt, -194.44pt) -- (497.62pt, -194.44pt)
+ -- (497.62pt, -194.44pt)
+ -- (497.62pt, -167.02pt)
+ -- (497.62pt, -167.02pt)
+ -- (444.1pt, -167.02pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(458.62,-178.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.32v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(498.1pt, -194.44pt) -- (552pt, -194.44pt)
+ -- (552pt, -194.44pt)
+ -- (552pt, -167.02pt)
+ -- (552pt, -167.02pt)
+ -- (498.1pt, -167.02pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(515.44pt, -181.66pt) -- (536.76pt, -181.66pt)
+ -- (536.76pt, -181.66pt)
+ -- (536.76pt, -167.02pt)
+ -- (536.76pt, -167.02pt)
+ -- (515.44pt, -167.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(498.1pt, -194.44pt) -- (552pt, -194.44pt)
+ -- (552pt, -194.44pt)
+ -- (552pt, -167.02pt)
+ -- (552pt, -167.02pt)
+ -- (498.1pt, -167.02pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(515.44,-178.42){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}1.02 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -167.02pt) -- (30.06pt, -167.02pt)
+ -- (30.06pt, -167.02pt)
+ -- (30.06pt, -164.44pt)
+ -- (30.06pt, -164.44pt)
+ -- (29.58pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -167.02pt) -- (66.72pt, -167.02pt)
+ -- (66.72pt, -167.02pt)
+ -- (66.72pt, -164.44pt)
+ -- (66.72pt, -164.44pt)
+ -- (66.24pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -167.02pt) -- (133.58pt, -167.02pt)
+ -- (133.58pt, -167.02pt)
+ -- (133.58pt, -164.44pt)
+ -- (133.58pt, -164.44pt)
+ -- (133.1pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.58pt, -164.92pt) -- (187.1pt, -164.92pt)
+ -- (187.1pt, -164.92pt)
+ -- (187.1pt, -164.44pt)
+ -- (187.1pt, -164.44pt)
+ -- (133.58pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -167.02pt) -- (187.58pt, -167.02pt)
+ -- (187.58pt, -167.02pt)
+ -- (187.58pt, -164.44pt)
+ -- (187.58pt, -164.44pt)
+ -- (187.1pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.58pt, -164.92pt) -- (277.16pt, -164.92pt)
+ -- (277.16pt, -164.92pt)
+ -- (277.16pt, -164.44pt)
+ -- (277.16pt, -164.44pt)
+ -- (187.58pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -167.02pt) -- (277.64pt, -167.02pt)
+ -- (277.64pt, -167.02pt)
+ -- (277.64pt, -164.44pt)
+ -- (277.64pt, -164.44pt)
+ -- (277.16pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.64pt, -164.92pt) -- (336.76pt, -164.92pt)
+ -- (336.76pt, -164.92pt)
+ -- (336.76pt, -164.44pt)
+ -- (336.76pt, -164.44pt)
+ -- (277.64pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -167.02pt) -- (337.24pt, -167.02pt)
+ -- (337.24pt, -167.02pt)
+ -- (337.24pt, -164.44pt)
+ -- (337.24pt, -164.44pt)
+ -- (336.76pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(337.24pt, -164.92pt) -- (398.62pt, -164.92pt)
+ -- (398.62pt, -164.92pt)
+ -- (398.62pt, -164.44pt)
+ -- (398.62pt, -164.44pt)
+ -- (337.24pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -167.02pt) -- (399.1pt, -167.02pt)
+ -- (399.1pt, -167.02pt)
+ -- (399.1pt, -164.44pt)
+ -- (399.1pt, -164.44pt)
+ -- (398.62pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(399.1pt, -164.92pt) -- (443.62pt, -164.92pt)
+ -- (443.62pt, -164.92pt)
+ -- (443.62pt, -164.44pt)
+ -- (443.62pt, -164.44pt)
+ -- (399.1pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -167.02pt) -- (444.1pt, -167.02pt)
+ -- (444.1pt, -167.02pt)
+ -- (444.1pt, -164.44pt)
+ -- (444.1pt, -164.44pt)
+ -- (443.62pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(444.1pt, -164.92pt) -- (497.62pt, -164.92pt)
+ -- (497.62pt, -164.92pt)
+ -- (497.62pt, -164.44pt)
+ -- (497.62pt, -164.44pt)
+ -- (444.1pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -167.02pt) -- (498.1pt, -167.02pt)
+ -- (498.1pt, -167.02pt)
+ -- (498.1pt, -164.44pt)
+ -- (498.1pt, -164.44pt)
+ -- (497.62pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(498.1pt, -164.92pt) -- (552pt, -164.92pt)
+ -- (552pt, -164.92pt)
+ -- (552pt, -164.44pt)
+ -- (552pt, -164.44pt)
+ -- (498.1pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -167.02pt) -- (552.48pt, -167.02pt)
+ -- (552.48pt, -167.02pt)
+ -- (552.48pt, -164.44pt)
+ -- (552.48pt, -164.44pt)
+ -- (552pt, -164.44pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -201.4pt) -- (30.06pt, -201.4pt)
+ -- (30.06pt, -201.4pt)
+ -- (30.06pt, -167.02pt)
+ -- (30.06pt, -167.02pt)
+ -- (29.58pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -201.4pt) -- (66.72pt, -201.4pt)
+ -- (66.72pt, -201.4pt)
+ -- (66.72pt, -167.02pt)
+ -- (66.72pt, -167.02pt)
+ -- (66.24pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -201.4pt) -- (133.58pt, -201.4pt)
+ -- (133.58pt, -201.4pt)
+ -- (133.58pt, -167.02pt)
+ -- (133.58pt, -167.02pt)
+ -- (133.1pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -201.4pt) -- (187.58pt, -201.4pt)
+ -- (187.58pt, -201.4pt)
+ -- (187.58pt, -167.02pt)
+ -- (187.58pt, -167.02pt)
+ -- (187.1pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -201.4pt) -- (277.64pt, -201.4pt)
+ -- (277.64pt, -201.4pt)
+ -- (277.64pt, -167.02pt)
+ -- (277.64pt, -167.02pt)
+ -- (277.16pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -201.4pt) -- (337.24pt, -201.4pt)
+ -- (337.24pt, -201.4pt)
+ -- (337.24pt, -167.02pt)
+ -- (337.24pt, -167.02pt)
+ -- (336.76pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -201.4pt) -- (399.1pt, -201.4pt)
+ -- (399.1pt, -201.4pt)
+ -- (399.1pt, -167.02pt)
+ -- (399.1pt, -167.02pt)
+ -- (398.62pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -201.4pt) -- (444.1pt, -201.4pt)
+ -- (444.1pt, -201.4pt)
+ -- (444.1pt, -167.02pt)
+ -- (444.1pt, -167.02pt)
+ -- (443.62pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -201.4pt) -- (498.1pt, -201.4pt)
+ -- (498.1pt, -201.4pt)
+ -- (498.1pt, -167.02pt)
+ -- (498.1pt, -167.02pt)
+ -- (497.62pt, -167.02pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -201.4pt) -- (552.48pt, -201.4pt)
+ -- (552.48pt, -201.4pt)
+ -- (552.48pt, -167.02pt)
+ -- (552.48pt, -167.02pt)
+ -- (552pt, -167.02pt) -- cycle
+;
+\begin{scope}
+\clip
+(30.06pt, -257.14pt) -- (66.24001pt, -257.14pt)
+ -- (66.24001pt, -257.14pt)
+ -- (66.24001pt, -204.04pt)
+ -- (66.24001pt, -204.04pt)
+ -- (30.06pt, -204.04pt) -- cycle
+;
+\begin{scope}
+\clip
+(30.06pt, -257.14pt) -- (66.24001pt, -257.14pt)
+ -- (66.24001pt, -257.14pt)
+ -- (66.24001pt, -204.04pt)
+ -- (66.24001pt, -204.04pt)
+ -- (30.06pt, -204.04pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(51.24,-234.88){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(90.5,-234.04){\fontsize{12}{1}\usefont{T1}{cmr}{b}{n}\selectfont\color{color_29791}Left  }
+\put(143.18,-215.44){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}ퟐ0Hz }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -231.7pt) -- (277.16pt, -231.7pt)
+ -- (277.16pt, -231.7pt)
+ -- (277.16pt, -204.04pt)
+ -- (277.16pt, -204.04pt)
+ -- (187.58pt, -204.04pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(220.16pt, -218.68pt) -- (246.86pt, -218.68pt)
+ -- (246.86pt, -218.68pt)
+ -- (246.86pt, -204.04pt)
+ -- (246.86pt, -204.04pt)
+ -- (220.16pt, -204.04pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -231.7pt) -- (277.16pt, -231.7pt)
+ -- (277.16pt, -231.7pt)
+ -- (277.16pt, -204.04pt)
+ -- (277.16pt, -204.04pt)
+ -- (187.58pt, -204.04pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(220.16,-215.44){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.16v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.64pt, -231.7pt) -- (336.76pt, -231.7pt)
+ -- (336.76pt, -231.7pt)
+ -- (336.76pt, -204.04pt)
+ -- (336.76pt, -204.04pt)
+ -- (277.64pt, -204.04pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(295.04pt, -218.68pt) -- (321.76pt, -218.68pt)
+ -- (321.76pt, -218.68pt)
+ -- (321.76pt, -204.04pt)
+ -- (321.76pt, -204.04pt)
+ -- (295.04pt, -204.04pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.64pt, -231.7pt) -- (336.76pt, -231.7pt)
+ -- (336.76pt, -231.7pt)
+ -- (336.76pt, -204.04pt)
+ -- (336.76pt, -204.04pt)
+ -- (277.64pt, -204.04pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(295.04,-215.44){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.08v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(337.24pt, -231.7pt) -- (398.62pt, -231.7pt)
+ -- (398.62pt, -231.7pt)
+ -- (398.62pt, -204.04pt)
+ -- (398.62pt, -204.04pt)
+ -- (337.24pt, -204.04pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(355.36pt, -218.68pt) -- (382.72pt, -218.68pt)
+ -- (382.72pt, -218.68pt)
+ -- (382.72pt, -204.04pt)
+ -- (382.72pt, -204.04pt)
+ -- (355.36pt, -204.04pt) -- cycle
+;
+\begin{scope}
+\clip
+(337.24pt, -231.7pt) -- (398.62pt, -231.7pt)
+ -- (398.62pt, -231.7pt)
+ -- (398.62pt, -204.04pt)
+ -- (398.62pt, -204.04pt)
+ -- (337.24pt, -204.04pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(355.36,-215.44){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}0.981 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(399.1pt, -231.7pt) -- (443.62pt, -231.7pt)
+ -- (443.62pt, -231.7pt)
+ -- (443.62pt, -204.04pt)
+ -- (443.62pt, -204.04pt)
+ -- (399.1pt, -204.04pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(409.18pt, -218.68pt) -- (435.88pt, -218.68pt)
+ -- (435.88pt, -218.68pt)
+ -- (435.88pt, -204.04pt)
+ -- (435.88pt, -204.04pt)
+ -- (409.18pt, -204.04pt) -- cycle
+;
+\begin{scope}
+\clip
+(399.1pt, -231.7pt) -- (443.62pt, -231.7pt)
+ -- (443.62pt, -231.7pt)
+ -- (443.62pt, -204.04pt)
+ -- (443.62pt, -204.04pt)
+ -- (399.1pt, -204.04pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(409.18,-215.44){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.60v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(444.1pt, -231.7pt) -- (497.62pt, -231.7pt)
+ -- (497.62pt, -231.7pt)
+ -- (497.62pt, -204.04pt)
+ -- (497.62pt, -204.04pt)
+ -- (444.1pt, -204.04pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(458.62pt, -218.68pt) -- (485.32pt, -218.68pt)
+ -- (485.32pt, -218.68pt)
+ -- (485.32pt, -204.04pt)
+ -- (485.32pt, -204.04pt)
+ -- (458.62pt, -204.04pt) -- cycle
+;
+\begin{scope}
+\clip
+(444.1pt, -231.7pt) -- (497.62pt, -231.7pt)
+ -- (497.62pt, -231.7pt)
+ -- (497.62pt, -204.04pt)
+ -- (497.62pt, -204.04pt)
+ -- (444.1pt, -204.04pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(458.62,-215.44){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}13.6v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(498.1pt, -231.7pt) -- (552pt, -231.7pt)
+ -- (552pt, -231.7pt)
+ -- (552pt, -204.04pt)
+ -- (552pt, -204.04pt)
+ -- (498.1pt, -204.04pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(518.52pt, -218.68pt) -- (533.7pt, -218.68pt)
+ -- (533.7pt, -218.68pt)
+ -- (533.7pt, -204.04pt)
+ -- (533.7pt, -204.04pt)
+ -- (518.52pt, -204.04pt) -- cycle
+;
+\begin{scope}
+\clip
+(498.1pt, -231.7pt) -- (552pt, -231.7pt)
+ -- (552pt, -231.7pt)
+ -- (552pt, -204.04pt)
+ -- (552pt, -204.04pt)
+ -- (498.1pt, -204.04pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(518.52,-215.44){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}8.5 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -203.98pt) -- (30.06pt, -203.98pt)
+ -- (30.06pt, -203.98pt)
+ -- (30.06pt, -201.4pt)
+ -- (30.06pt, -201.4pt)
+ -- (29.58pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(30.06pt, -201.88pt) -- (66.24001pt, -201.88pt)
+ -- (66.24001pt, -201.88pt)
+ -- (66.24001pt, -201.4pt)
+ -- (66.24001pt, -201.4pt)
+ -- (30.06pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -203.98pt) -- (66.72pt, -203.98pt)
+ -- (66.72pt, -203.98pt)
+ -- (66.72pt, -201.4pt)
+ -- (66.72pt, -201.4pt)
+ -- (66.24pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.72pt, -201.88pt) -- (133.1pt, -201.88pt)
+ -- (133.1pt, -201.88pt)
+ -- (133.1pt, -201.4pt)
+ -- (133.1pt, -201.4pt)
+ -- (66.72pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -203.98pt) -- (133.58pt, -203.98pt)
+ -- (133.58pt, -203.98pt)
+ -- (133.58pt, -201.4pt)
+ -- (133.58pt, -201.4pt)
+ -- (133.1pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.58pt, -201.88pt) -- (187.1pt, -201.88pt)
+ -- (187.1pt, -201.88pt)
+ -- (187.1pt, -201.4pt)
+ -- (187.1pt, -201.4pt)
+ -- (133.58pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -203.98pt) -- (187.58pt, -203.98pt)
+ -- (187.58pt, -203.98pt)
+ -- (187.58pt, -201.4pt)
+ -- (187.58pt, -201.4pt)
+ -- (187.1pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.58pt, -201.88pt) -- (277.16pt, -201.88pt)
+ -- (277.16pt, -201.88pt)
+ -- (277.16pt, -201.4pt)
+ -- (277.16pt, -201.4pt)
+ -- (187.58pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -203.98pt) -- (277.64pt, -203.98pt)
+ -- (277.64pt, -203.98pt)
+ -- (277.64pt, -201.4pt)
+ -- (277.64pt, -201.4pt)
+ -- (277.16pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.64pt, -201.88pt) -- (336.76pt, -201.88pt)
+ -- (336.76pt, -201.88pt)
+ -- (336.76pt, -201.4pt)
+ -- (336.76pt, -201.4pt)
+ -- (277.64pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -203.98pt) -- (337.24pt, -203.98pt)
+ -- (337.24pt, -203.98pt)
+ -- (337.24pt, -201.4pt)
+ -- (337.24pt, -201.4pt)
+ -- (336.76pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(337.24pt, -201.88pt) -- (398.62pt, -201.88pt)
+ -- (398.62pt, -201.88pt)
+ -- (398.62pt, -201.4pt)
+ -- (398.62pt, -201.4pt)
+ -- (337.24pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -203.98pt) -- (399.1pt, -203.98pt)
+ -- (399.1pt, -203.98pt)
+ -- (399.1pt, -201.4pt)
+ -- (399.1pt, -201.4pt)
+ -- (398.62pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(399.1pt, -201.88pt) -- (443.62pt, -201.88pt)
+ -- (443.62pt, -201.88pt)
+ -- (443.62pt, -201.4pt)
+ -- (443.62pt, -201.4pt)
+ -- (399.1pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -203.98pt) -- (444.1pt, -203.98pt)
+ -- (444.1pt, -203.98pt)
+ -- (444.1pt, -201.4pt)
+ -- (444.1pt, -201.4pt)
+ -- (443.62pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(444.1pt, -201.88pt) -- (497.62pt, -201.88pt)
+ -- (497.62pt, -201.88pt)
+ -- (497.62pt, -201.4pt)
+ -- (497.62pt, -201.4pt)
+ -- (444.1pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -203.98pt) -- (498.1pt, -203.98pt)
+ -- (498.1pt, -203.98pt)
+ -- (498.1pt, -201.4pt)
+ -- (498.1pt, -201.4pt)
+ -- (497.62pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(498.1pt, -201.88pt) -- (552pt, -201.88pt)
+ -- (552pt, -201.88pt)
+ -- (552pt, -201.4pt)
+ -- (552pt, -201.4pt)
+ -- (498.1pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -203.98pt) -- (552.48pt, -203.98pt)
+ -- (552.48pt, -203.98pt)
+ -- (552.48pt, -201.4pt)
+ -- (552.48pt, -201.4pt)
+ -- (552pt, -201.4pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -238.72pt) -- (30.06pt, -238.72pt)
+ -- (30.06pt, -238.72pt)
+ -- (30.06pt, -203.98pt)
+ -- (30.06pt, -203.98pt)
+ -- (29.58pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -238.72pt) -- (66.72pt, -238.72pt)
+ -- (66.72pt, -238.72pt)
+ -- (66.72pt, -203.98pt)
+ -- (66.72pt, -203.98pt)
+ -- (66.24pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -238.72pt) -- (133.58pt, -238.72pt)
+ -- (133.58pt, -238.72pt)
+ -- (133.58pt, -203.98pt)
+ -- (133.58pt, -203.98pt)
+ -- (133.1pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -238.72pt) -- (187.58pt, -238.72pt)
+ -- (187.58pt, -238.72pt)
+ -- (187.58pt, -203.98pt)
+ -- (187.58pt, -203.98pt)
+ -- (187.1pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -238.72pt) -- (277.64pt, -238.72pt)
+ -- (277.64pt, -238.72pt)
+ -- (277.64pt, -203.98pt)
+ -- (277.64pt, -203.98pt)
+ -- (277.16pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -238.72pt) -- (337.24pt, -238.72pt)
+ -- (337.24pt, -238.72pt)
+ -- (337.24pt, -203.98pt)
+ -- (337.24pt, -203.98pt)
+ -- (336.76pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -238.72pt) -- (399.1pt, -238.72pt)
+ -- (399.1pt, -238.72pt)
+ -- (399.1pt, -203.98pt)
+ -- (399.1pt, -203.98pt)
+ -- (398.62pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -238.72pt) -- (444.1pt, -238.72pt)
+ -- (444.1pt, -238.72pt)
+ -- (444.1pt, -203.98pt)
+ -- (444.1pt, -203.98pt)
+ -- (443.62pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -238.72pt) -- (498.1pt, -238.72pt)
+ -- (498.1pt, -238.72pt)
+ -- (498.1pt, -203.98pt)
+ -- (498.1pt, -203.98pt)
+ -- (497.62pt, -203.98pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -238.72pt) -- (552.48pt, -238.72pt)
+ -- (552.48pt, -238.72pt)
+ -- (552.48pt, -203.98pt)
+ -- (552.48pt, -203.98pt)
+ -- (552pt, -203.98pt) -- cycle
+;
+\begin{scope}
+\clip
+(133.58pt, -257.14pt) -- (187.1pt, -257.14pt)
+ -- (187.1pt, -257.14pt)
+ -- (187.1pt, -241.3pt)
+ -- (187.1pt, -241.3pt)
+ -- (133.58pt, -241.3pt) -- cycle
+;
+\begin{scope}
+\clip
+(133.58pt, -257.14pt) -- (187.1pt, -257.14pt)
+ -- (187.1pt, -257.14pt)
+ -- (187.1pt, -241.3pt)
+ -- (187.1pt, -241.3pt)
+ -- (133.58pt, -241.3pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(143.18,-252.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}ퟐ0KHz  }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -257.14pt) -- (277.16pt, -257.14pt)
+ -- (277.16pt, -257.14pt)
+ -- (277.16pt, -241.3pt)
+ -- (277.16pt, -241.3pt)
+ -- (187.58pt, -241.3pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(227.72pt, -256pt) -- (239.24pt, -256pt)
+ -- (239.24pt, -256pt)
+ -- (239.24pt, -241.3pt)
+ -- (239.24pt, -241.3pt)
+ -- (227.72pt, -241.3pt) -- cycle
+;
+\begin{scope}
+\clip
+(187.58pt, -257.14pt) -- (277.16pt, -257.14pt)
+ -- (277.16pt, -257.14pt)
+ -- (277.16pt, -241.3pt)
+ -- (277.16pt, -241.3pt)
+ -- (187.58pt, -241.3pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(227.72,-252.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}5v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.64pt, -257.14pt) -- (336.76pt, -257.14pt)
+ -- (336.76pt, -257.14pt)
+ -- (336.76pt, -241.3pt)
+ -- (336.76pt, -241.3pt)
+ -- (277.64pt, -241.3pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(295.04pt, -256pt) -- (321.76pt, -256pt)
+ -- (321.76pt, -256pt)
+ -- (321.76pt, -241.3pt)
+ -- (321.76pt, -241.3pt)
+ -- (295.04pt, -241.3pt) -- cycle
+;
+\begin{scope}
+\clip
+(277.64pt, -257.14pt) -- (336.76pt, -257.14pt)
+ -- (336.76pt, -257.14pt)
+ -- (336.76pt, -241.3pt)
+ -- (336.76pt, -241.3pt)
+ -- (277.64pt, -241.3pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(295.04,-252.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}16.8v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(337.24pt, -257.14pt) -- (398.62pt, -257.14pt)
+ -- (398.62pt, -257.14pt)
+ -- (398.62pt, -241.3pt)
+ -- (398.62pt, -241.3pt)
+ -- (337.24pt, -241.3pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(358.36pt, -256pt) -- (379.66pt, -256pt)
+ -- (379.66pt, -256pt)
+ -- (379.66pt, -241.3pt)
+ -- (379.66pt, -241.3pt)
+ -- (358.36pt, -241.3pt) -- cycle
+;
+\begin{scope}
+\clip
+(337.24pt, -257.14pt) -- (398.62pt, -257.14pt)
+ -- (398.62pt, -257.14pt)
+ -- (398.62pt, -241.3pt)
+ -- (398.62pt, -241.3pt)
+ -- (337.24pt, -241.3pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(358.36,-252.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}3.36 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(399.1pt, -257.14pt) -- (443.62pt, -257.14pt)
+ -- (443.62pt, -257.14pt)
+ -- (443.62pt, -241.3pt)
+ -- (443.62pt, -241.3pt)
+ -- (399.1pt, -241.3pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(409.18pt, -256pt) -- (435.88pt, -256pt)
+ -- (435.88pt, -256pt)
+ -- (435.88pt, -241.3pt)
+ -- (435.88pt, -241.3pt)
+ -- (409.18pt, -241.3pt) -- cycle
+;
+\begin{scope}
+\clip
+(399.1pt, -257.14pt) -- (443.62pt, -257.14pt)
+ -- (443.62pt, -257.14pt)
+ -- (443.62pt, -241.3pt)
+ -- (443.62pt, -241.3pt)
+ -- (399.1pt, -241.3pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(409.18,-252.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}4.24v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(444.1pt, -257.14pt) -- (497.62pt, -257.14pt)
+ -- (497.62pt, -257.14pt)
+ -- (497.62pt, -241.3pt)
+ -- (497.62pt, -241.3pt)
+ -- (444.1pt, -241.3pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(458.62pt, -256pt) -- (485.32pt, -256pt)
+ -- (485.32pt, -256pt)
+ -- (485.32pt, -241.3pt)
+ -- (485.32pt, -241.3pt)
+ -- (458.62pt, -241.3pt) -- cycle
+;
+\begin{scope}
+\clip
+(444.1pt, -257.14pt) -- (497.62pt, -257.14pt)
+ -- (497.62pt, -257.14pt)
+ -- (497.62pt, -241.3pt)
+ -- (497.62pt, -241.3pt)
+ -- (444.1pt, -241.3pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(458.62,-252.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}13.6v }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\begin{scope}
+\clip
+(498.1pt, -257.14pt) -- (552pt, -257.14pt)
+ -- (552pt, -257.14pt)
+ -- (552pt, -241.3pt)
+ -- (552pt, -241.3pt)
+ -- (498.1pt, -241.3pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(518.52pt, -256pt) -- (533.7pt, -256pt)
+ -- (533.7pt, -256pt)
+ -- (533.7pt, -241.3pt)
+ -- (533.7pt, -241.3pt)
+ -- (518.52pt, -241.3pt) -- cycle
+;
+\begin{scope}
+\clip
+(498.1pt, -257.14pt) -- (552pt, -257.14pt)
+ -- (552pt, -257.14pt)
+ -- (552pt, -241.3pt)
+ -- (552pt, -241.3pt)
+ -- (498.1pt, -241.3pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(518.52,-252.7){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}8.5 }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(20.58pt, -264.64pt) -- (561.48pt, -264.64pt)
+ -- (561.48pt, -264.64pt)
+ -- (561.48pt, -67.16003pt)
+ -- (561.48pt, -67.16003pt)
+ -- (20.58pt, -67.16003pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -241.3pt) -- (30.06pt, -241.3pt)
+ -- (30.06pt, -241.3pt)
+ -- (30.06pt, -238.72pt)
+ -- (30.06pt, -238.72pt)
+ -- (29.58pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -241.3pt) -- (66.72pt, -241.3pt)
+ -- (66.72pt, -241.3pt)
+ -- (66.72pt, -238.72pt)
+ -- (66.72pt, -238.72pt)
+ -- (66.24pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -241.3pt) -- (133.58pt, -241.3pt)
+ -- (133.58pt, -241.3pt)
+ -- (133.58pt, -238.72pt)
+ -- (133.58pt, -238.72pt)
+ -- (133.1pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.58pt, -239.2pt) -- (187.1pt, -239.2pt)
+ -- (187.1pt, -239.2pt)
+ -- (187.1pt, -238.72pt)
+ -- (187.1pt, -238.72pt)
+ -- (133.58pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -241.3pt) -- (187.58pt, -241.3pt)
+ -- (187.58pt, -241.3pt)
+ -- (187.58pt, -238.72pt)
+ -- (187.58pt, -238.72pt)
+ -- (187.1pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.58pt, -239.2pt) -- (277.16pt, -239.2pt)
+ -- (277.16pt, -239.2pt)
+ -- (277.16pt, -238.72pt)
+ -- (277.16pt, -238.72pt)
+ -- (187.58pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -241.3pt) -- (277.64pt, -241.3pt)
+ -- (277.64pt, -241.3pt)
+ -- (277.64pt, -238.72pt)
+ -- (277.64pt, -238.72pt)
+ -- (277.16pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.64pt, -239.2pt) -- (336.76pt, -239.2pt)
+ -- (336.76pt, -239.2pt)
+ -- (336.76pt, -238.72pt)
+ -- (336.76pt, -238.72pt)
+ -- (277.64pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -241.3pt) -- (337.24pt, -241.3pt)
+ -- (337.24pt, -241.3pt)
+ -- (337.24pt, -238.72pt)
+ -- (337.24pt, -238.72pt)
+ -- (336.76pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(337.24pt, -239.2pt) -- (398.62pt, -239.2pt)
+ -- (398.62pt, -239.2pt)
+ -- (398.62pt, -238.72pt)
+ -- (398.62pt, -238.72pt)
+ -- (337.24pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -241.3pt) -- (399.1pt, -241.3pt)
+ -- (399.1pt, -241.3pt)
+ -- (399.1pt, -238.72pt)
+ -- (399.1pt, -238.72pt)
+ -- (398.62pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(399.1pt, -239.2pt) -- (443.62pt, -239.2pt)
+ -- (443.62pt, -239.2pt)
+ -- (443.62pt, -238.72pt)
+ -- (443.62pt, -238.72pt)
+ -- (399.1pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -241.3pt) -- (444.1pt, -241.3pt)
+ -- (444.1pt, -241.3pt)
+ -- (444.1pt, -238.72pt)
+ -- (444.1pt, -238.72pt)
+ -- (443.62pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(444.1pt, -239.2pt) -- (497.62pt, -239.2pt)
+ -- (497.62pt, -239.2pt)
+ -- (497.62pt, -238.72pt)
+ -- (497.62pt, -238.72pt)
+ -- (444.1pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -241.3pt) -- (498.1pt, -241.3pt)
+ -- (498.1pt, -241.3pt)
+ -- (498.1pt, -238.72pt)
+ -- (498.1pt, -238.72pt)
+ -- (497.62pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(498.1pt, -239.2pt) -- (552pt, -239.2pt)
+ -- (552pt, -239.2pt)
+ -- (552pt, -238.72pt)
+ -- (552pt, -238.72pt)
+ -- (498.1pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -241.3pt) -- (552.48pt, -241.3pt)
+ -- (552.48pt, -241.3pt)
+ -- (552.48pt, -238.72pt)
+ -- (552.48pt, -238.72pt)
+ -- (552pt, -238.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(29.58pt, -264.16pt) -- (30.06pt, -264.16pt)
+ -- (30.06pt, -264.16pt)
+ -- (30.06pt, -241.3pt)
+ -- (30.06pt, -241.3pt)
+ -- (29.58pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -264.16pt) -- (66.72pt, -264.16pt)
+ -- (66.72pt, -264.16pt)
+ -- (66.72pt, -241.3pt)
+ -- (66.72pt, -241.3pt)
+ -- (66.24pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -264.64pt) -- (66.72pt, -264.64pt)
+ -- (66.72pt, -264.64pt)
+ -- (66.72pt, -264.16pt)
+ -- (66.72pt, -264.16pt)
+ -- (66.24pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.24pt, -264.64pt) -- (66.72pt, -264.64pt)
+ -- (66.72pt, -264.64pt)
+ -- (66.72pt, -264.16pt)
+ -- (66.72pt, -264.16pt)
+ -- (66.24pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(66.72pt, -264.64pt) -- (133.1pt, -264.64pt)
+ -- (133.1pt, -264.64pt)
+ -- (133.1pt, -264.16pt)
+ -- (133.1pt, -264.16pt)
+ -- (66.72pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -264.16pt) -- (133.58pt, -264.16pt)
+ -- (133.58pt, -264.16pt)
+ -- (133.58pt, -241.3pt)
+ -- (133.58pt, -241.3pt)
+ -- (133.1pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.1pt, -264.64pt) -- (133.58pt, -264.64pt)
+ -- (133.58pt, -264.64pt)
+ -- (133.58pt, -264.16pt)
+ -- (133.58pt, -264.16pt)
+ -- (133.1pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(133.58pt, -264.64pt) -- (187.1pt, -264.64pt)
+ -- (187.1pt, -264.64pt)
+ -- (187.1pt, -264.16pt)
+ -- (187.1pt, -264.16pt)
+ -- (133.58pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -264.16pt) -- (187.58pt, -264.16pt)
+ -- (187.58pt, -264.16pt)
+ -- (187.58pt, -241.3pt)
+ -- (187.58pt, -241.3pt)
+ -- (187.1pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.1pt, -264.64pt) -- (187.58pt, -264.64pt)
+ -- (187.58pt, -264.64pt)
+ -- (187.58pt, -264.16pt)
+ -- (187.58pt, -264.16pt)
+ -- (187.1pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(187.58pt, -264.64pt) -- (277.16pt, -264.64pt)
+ -- (277.16pt, -264.64pt)
+ -- (277.16pt, -264.16pt)
+ -- (277.16pt, -264.16pt)
+ -- (187.58pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -264.16pt) -- (277.64pt, -264.16pt)
+ -- (277.64pt, -264.16pt)
+ -- (277.64pt, -241.3pt)
+ -- (277.64pt, -241.3pt)
+ -- (277.16pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.16pt, -264.64pt) -- (277.64pt, -264.64pt)
+ -- (277.64pt, -264.64pt)
+ -- (277.64pt, -264.16pt)
+ -- (277.64pt, -264.16pt)
+ -- (277.16pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(277.64pt, -264.64pt) -- (336.76pt, -264.64pt)
+ -- (336.76pt, -264.64pt)
+ -- (336.76pt, -264.16pt)
+ -- (336.76pt, -264.16pt)
+ -- (277.64pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -264.16pt) -- (337.24pt, -264.16pt)
+ -- (337.24pt, -264.16pt)
+ -- (337.24pt, -241.3pt)
+ -- (337.24pt, -241.3pt)
+ -- (336.76pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(336.76pt, -264.64pt) -- (337.24pt, -264.64pt)
+ -- (337.24pt, -264.64pt)
+ -- (337.24pt, -264.16pt)
+ -- (337.24pt, -264.16pt)
+ -- (336.76pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(337.24pt, -264.64pt) -- (398.62pt, -264.64pt)
+ -- (398.62pt, -264.64pt)
+ -- (398.62pt, -264.16pt)
+ -- (398.62pt, -264.16pt)
+ -- (337.24pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -264.16pt) -- (399.1pt, -264.16pt)
+ -- (399.1pt, -264.16pt)
+ -- (399.1pt, -241.3pt)
+ -- (399.1pt, -241.3pt)
+ -- (398.62pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(398.62pt, -264.64pt) -- (399.1pt, -264.64pt)
+ -- (399.1pt, -264.64pt)
+ -- (399.1pt, -264.16pt)
+ -- (399.1pt, -264.16pt)
+ -- (398.62pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(399.1pt, -264.64pt) -- (443.62pt, -264.64pt)
+ -- (443.62pt, -264.64pt)
+ -- (443.62pt, -264.16pt)
+ -- (443.62pt, -264.16pt)
+ -- (399.1pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -264.16pt) -- (444.1pt, -264.16pt)
+ -- (444.1pt, -264.16pt)
+ -- (444.1pt, -241.3pt)
+ -- (444.1pt, -241.3pt)
+ -- (443.62pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(443.62pt, -264.64pt) -- (444.1pt, -264.64pt)
+ -- (444.1pt, -264.64pt)
+ -- (444.1pt, -264.16pt)
+ -- (444.1pt, -264.16pt)
+ -- (443.62pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(444.1pt, -264.64pt) -- (497.62pt, -264.64pt)
+ -- (497.62pt, -264.64pt)
+ -- (497.62pt, -264.16pt)
+ -- (497.62pt, -264.16pt)
+ -- (444.1pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -264.16pt) -- (498.1pt, -264.16pt)
+ -- (498.1pt, -264.16pt)
+ -- (498.1pt, -241.3pt)
+ -- (498.1pt, -241.3pt)
+ -- (497.62pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(497.62pt, -264.64pt) -- (498.1pt, -264.64pt)
+ -- (498.1pt, -264.64pt)
+ -- (498.1pt, -264.16pt)
+ -- (498.1pt, -264.16pt)
+ -- (497.62pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(498.1pt, -264.64pt) -- (552pt, -264.64pt)
+ -- (552pt, -264.64pt)
+ -- (552pt, -264.16pt)
+ -- (552pt, -264.16pt)
+ -- (498.1pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -264.16pt) -- (552.48pt, -264.16pt)
+ -- (552.48pt, -264.16pt)
+ -- (552.48pt, -241.3pt)
+ -- (552.48pt, -241.3pt)
+ -- (552pt, -241.3pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -264.64pt) -- (552.48pt, -264.64pt)
+ -- (552.48pt, -264.64pt)
+ -- (552.48pt, -264.16pt)
+ -- (552.48pt, -264.16pt)
+ -- (552pt, -264.16pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(552pt, -264.64pt) -- (552.48pt, -264.64pt)
+ -- (552.48pt, -264.64pt)
+ -- (552.48pt, -264.16pt)
+ -- (552.48pt, -264.16pt)
+ -- (552pt, -264.16pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(0.84pt, -529.2pt) -- (581.22pt, -529.2pt)
+ -- (581.22pt, -529.2pt)
+ -- (581.22pt, -322.84pt)
+ -- (581.22pt, -322.84pt)
+ -- (0.84pt, -322.84pt) -- cycle
+;
+\begin{scope}
+\clip
+(10.32pt, -528.66pt) -- (299.66pt, -528.66pt)
+ -- (299.66pt, -528.66pt)
+ -- (299.66pt, -323.32pt)
+ -- (299.66pt, -323.32pt)
+ -- (10.32pt, -323.32pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(15.48pt, -336.76pt) -- (80.7pt, -336.76pt)
+ -- (80.7pt, -336.76pt)
+ -- (80.7pt, -323.32pt)
+ -- (80.7pt, -323.32pt)
+ -- (15.48pt, -323.32pt) -- cycle
+;
+\begin{scope}
+\clip
+(10.32pt, -528.66pt) -- (299.66pt, -528.66pt)
+ -- (299.66pt, -528.66pt)
+ -- (299.66pt, -323.32pt)
+ -- (299.66pt, -323.32pt)
+ -- (10.32pt, -323.32pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(15.48,-333.82){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Base1 at  20Hz }
+\put(15.48,-347.2){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(284,-525.78){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(0.84pt, -529.2pt) -- (581.22pt, -529.2pt)
+ -- (581.22pt, -529.2pt)
+ -- (581.22pt, -322.84pt)
+ -- (581.22pt, -322.84pt)
+ -- (0.84pt, -322.84pt) -- cycle
+;
+\begin{scope}
+\clip
+(300.14pt, -528.66pt) -- (571.74pt, -528.66pt)
+ -- (571.74pt, -528.66pt)
+ -- (571.74pt, -323.32pt)
+ -- (571.74pt, -323.32pt)
+ -- (300.14pt, -323.32pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(305.32pt, -336.76pt) -- (377.2pt, -336.76pt)
+ -- (377.2pt, -336.76pt)
+ -- (377.2pt, -323.32pt)
+ -- (377.2pt, -323.32pt)
+ -- (305.32pt, -323.32pt) -- cycle
+;
+\begin{scope}
+\clip
+(300.14pt, -528.66pt) -- (571.74pt, -528.66pt)
+ -- (571.74pt, -528.66pt)
+ -- (571.74pt, -323.32pt)
+ -- (571.74pt, -323.32pt)
+ -- (300.14pt, -323.32pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(305.32,-333.82){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Treble 1 at 20Hz }
+\put(305.32,-347.2){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(565.44,-528.66){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(0.84pt, -529.2pt) -- (581.22pt, -529.2pt)
+ -- (581.22pt, -529.2pt)
+ -- (581.22pt, -322.84pt)
+ -- (581.22pt, -322.84pt)
+ -- (0.84pt, -322.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -323.32pt) -- (10.32pt, -323.32pt)
+ -- (10.32pt, -323.32pt)
+ -- (10.32pt, -322.84pt)
+ -- (10.32pt, -322.84pt)
+ -- (9.84pt, -322.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -323.32pt) -- (10.32pt, -323.32pt)
+ -- (10.32pt, -323.32pt)
+ -- (10.32pt, -322.84pt)
+ -- (10.32pt, -322.84pt)
+ -- (9.84pt, -322.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(10.32pt, -323.32pt) -- (299.66pt, -323.32pt)
+ -- (299.66pt, -323.32pt)
+ -- (299.66pt, -322.84pt)
+ -- (299.66pt, -322.84pt)
+ -- (10.32pt, -322.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(299.66pt, -323.32pt) -- (300.14pt, -323.32pt)
+ -- (300.14pt, -323.32pt)
+ -- (300.14pt, -322.84pt)
+ -- (300.14pt, -322.84pt)
+ -- (299.66pt, -322.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(300.14pt, -323.32pt) -- (571.74pt, -323.32pt)
+ -- (571.74pt, -323.32pt)
+ -- (571.74pt, -322.84pt)
+ -- (571.74pt, -322.84pt)
+ -- (300.14pt, -322.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -323.32pt) -- (572.22pt, -323.32pt)
+ -- (572.22pt, -323.32pt)
+ -- (572.22pt, -322.84pt)
+ -- (572.22pt, -322.84pt)
+ -- (571.74pt, -322.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -323.32pt) -- (572.22pt, -323.32pt)
+ -- (572.22pt, -323.32pt)
+ -- (572.22pt, -322.84pt)
+ -- (572.22pt, -322.84pt)
+ -- (571.74pt, -322.84pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -528.72pt) -- (10.32pt, -528.72pt)
+ -- (10.32pt, -528.72pt)
+ -- (10.32pt, -323.32pt)
+ -- (10.32pt, -323.32pt)
+ -- (9.84pt, -323.32pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -529.2pt) -- (10.32pt, -529.2pt)
+ -- (10.32pt, -529.2pt)
+ -- (10.32pt, -528.72pt)
+ -- (10.32pt, -528.72pt)
+ -- (9.84pt, -528.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -529.2pt) -- (10.32pt, -529.2pt)
+ -- (10.32pt, -529.2pt)
+ -- (10.32pt, -528.72pt)
+ -- (10.32pt, -528.72pt)
+ -- (9.84pt, -528.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(10.32pt, -529.2pt) -- (299.66pt, -529.2pt)
+ -- (299.66pt, -529.2pt)
+ -- (299.66pt, -528.72pt)
+ -- (299.66pt, -528.72pt)
+ -- (10.32pt, -528.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(299.66pt, -528.72pt) -- (300.14pt, -528.72pt)
+ -- (300.14pt, -528.72pt)
+ -- (300.14pt, -323.32pt)
+ -- (300.14pt, -323.32pt)
+ -- (299.66pt, -323.32pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(299.66pt, -529.2pt) -- (300.14pt, -529.2pt)
+ -- (300.14pt, -529.2pt)
+ -- (300.14pt, -528.72pt)
+ -- (300.14pt, -528.72pt)
+ -- (299.66pt, -528.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(300.14pt, -529.2pt) -- (571.74pt, -529.2pt)
+ -- (571.74pt, -529.2pt)
+ -- (571.74pt, -528.72pt)
+ -- (571.74pt, -528.72pt)
+ -- (300.14pt, -528.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -528.72pt) -- (572.22pt, -528.72pt)
+ -- (572.22pt, -528.72pt)
+ -- (572.22pt, -323.32pt)
+ -- (572.22pt, -323.32pt)
+ -- (571.74pt, -323.32pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -529.2pt) -- (572.22pt, -529.2pt)
+ -- (572.22pt, -529.2pt)
+ -- (572.22pt, -528.72pt)
+ -- (572.22pt, -528.72pt)
+ -- (571.74pt, -528.72pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -529.2pt) -- (572.22pt, -529.2pt)
+ -- (572.22pt, -529.2pt)
+ -- (572.22pt, -528.72pt)
+ -- (572.22pt, -528.72pt)
+ -- (571.74pt, -528.72pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(15.475pt, -525.74pt) -- (283.275pt, -525.74pt)
+ -- (283.275pt, -525.74pt)
+ -- (283.275pt, -350.15pt)
+ -- (283.275pt, -350.15pt)
+ -- (15.475pt, -350.15pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(15.475,-525.74){\includegraphics[width=267.8pt,height=175.59pt]{latexImage_706ba812d2f3585953ed1fee2dd6ce85.png}}
+\put(305.27,-528.48){\includegraphics[width=260.15pt,height=178.33pt]{latexImage_2cc386cd3242a08447eca3cb14271946.png}}
+\put(39.807,-117.19){\includegraphics[width=14.64pt,height=3.3pt]{latexImage_562eae05de0d379942ec922b28fff182.png}}
+\put(39.723,-159.72){\includegraphics[width=14.64001pt,height=9.840061pt]{latexImage_73c45efcbe04a1f8f7358604312c29e0.png}}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(39.723pt, -149.88pt) -- (54.363pt, -149.88pt)
+ -- (54.363pt, -149.88pt)
+ -- (54.363pt, -159.78pt)
+ -- (54.363pt, -159.78pt)
+ -- (39.723pt, -159.78pt)
+ -- (39.723pt, -159.78pt)
+ -- (39.723pt, -149.88pt) -- cycle
+;
+\filldraw[color_29791][nonzero rule]
+(47.428pt, -155.49pt) .. controls (47.085pt, -155.42pt) and (46.722pt, -155.39pt) .. (46.34pt, -155.39pt)
+ -- (46.34pt, -155.39pt) .. controls (45.99pt, -155.39pt) and (45.731pt, -155.44pt) .. (45.565pt, -155.55pt)
+ -- (45.565pt, -155.55pt) .. controls (45.399pt, -155.66pt) and (45.316pt, -155.81pt) .. (45.316pt, -156pt)
+ -- (45.316pt, -156pt) .. controls (45.316pt, -156.14pt) and (45.345pt, -156.28pt) .. (45.404pt, -156.41pt)
+ -- (45.404pt, -156.41pt) .. controls (45.463pt, -156.53pt) and (45.556pt, -156.66pt) .. (45.683pt, -156.79pt)
+ -- (45.683pt, -156.79pt) .. controls (45.81pt, -156.92pt) and (45.985pt, -157.04pt) .. (46.209pt, -157.16pt)
+ -- (46.209pt, -157.16pt) .. controls (46.432pt, -157.28pt) and (46.68pt, -157.39pt) .. (46.951pt, -157.48pt)
+ -- (46.951pt, -157.48pt) .. controls (47.223pt, -157.56pt) and (47.504pt, -157.63pt) .. (47.796pt, -157.68pt)
+ -- (47.796pt, -157.68pt) .. controls (48.087pt, -157.73pt) and (48.349pt, -157.76pt) .. (48.581pt, -157.76pt)
+ -- (48.581pt, -157.76pt) .. controls (49.167pt, -157.76pt) and (49.46pt, -157.59pt) .. (49.46pt, -157.25pt)
+ -- (49.46pt, -157.25pt) .. controls (49.46pt, -156.97pt) and (49.281pt, -156.66pt) .. (48.921pt, -156.34pt)
+ -- (48.921pt, -156.34pt) .. controls (48.562pt, -156.02pt) and (48.065pt, -155.73pt) .. (47.428pt, -155.49pt) -- cycle
+(46.061pt, -154.56pt) -- (44.844pt, -154.05pt)
+ -- (44.844pt, -154.05pt)
+ -- (44.844pt, -152.59pt)
+ -- (44.844pt, -152.59pt)
+ -- (45.198pt, -152.66pt)
+ -- (45.198pt, -152.66pt) .. controls (45.366pt, -152.79pt) and (45.672pt, -153.02pt) .. (46.117pt, -153.35pt)
+ -- (46.117pt, -153.35pt) .. controls (46.562pt, -153.67pt) and (47.014pt, -153.98pt) .. (47.471pt, -154.28pt)
+ -- (47.471pt, -154.28pt) .. controls (47.586pt, -154.29pt) and (47.793pt, -154.3pt) .. (48.093pt, -154.32pt)
+ -- (48.093pt, -154.32pt) .. controls (48.383pt, -154.34pt) and (48.592pt, -154.35pt) .. (48.72pt, -154.35pt)
+ -- (48.72pt, -154.35pt) .. controls (49.017pt, -154.35pt) and (49.216pt, -154.33pt) .. (49.318pt, -154.27pt)
+ -- (49.318pt, -154.27pt) .. controls (49.42pt, -154.22pt) and (49.471pt, -154.13pt) .. (49.471pt, -154pt)
+ -- (49.471pt, -154pt) .. controls (49.471pt, -153.9pt) and (49.432pt, -153.8pt) .. (49.353pt, -153.69pt)
+ -- (49.353pt, -153.69pt) .. controls (49.274pt, -153.58pt) and (49.133pt, -153.43pt) .. (48.929pt, -153.26pt)
+ -- (48.929pt, -153.26pt)
+ -- (49.316pt, -152.87pt)
+ -- (49.316pt, -152.87pt) .. controls (49.641pt, -153.19pt) and (49.878pt, -153.49pt) .. (50.026pt, -153.78pt)
+ -- (50.026pt, -153.78pt) .. controls (50.174pt, -154.06pt) and (50.248pt, -154.37pt) .. (50.248pt, -154.71pt)
+ -- (50.248pt, -154.71pt) .. controls (50.248pt, -155pt) and (50.163pt, -155.22pt) .. (49.991pt, -155.37pt)
+ -- (49.991pt, -155.37pt) .. controls (49.819pt, -155.52pt) and (49.566pt, -155.59pt) .. (49.23pt, -155.59pt)
+ -- (49.23pt, -155.59pt) .. controls (49.105pt, -155.59pt) and (48.972pt, -155.58pt) .. (48.833pt, -155.56pt)
+ -- (48.833pt, -155.56pt)
+ -- (48.822pt, -155.64pt)
+ -- (48.822pt, -155.64pt) .. controls (49.251pt, -155.98pt) and (49.554pt, -156.25pt) .. (49.731pt, -156.46pt)
+ -- (49.731pt, -156.46pt) .. controls (49.908pt, -156.68pt) and (50.038pt, -156.89pt) .. (50.122pt, -157.12pt)
+ -- (50.122pt, -157.12pt) .. controls (50.206pt, -157.34pt) and (50.248pt, -157.59pt) .. (50.248pt, -157.87pt)
+ -- (50.248pt, -157.87pt) .. controls (50.248pt, -158.16pt) and (50.184pt, -158.4pt) .. (50.055pt, -158.61pt)
+ -- (50.055pt, -158.61pt) .. controls (49.927pt, -158.81pt) and (49.734pt, -158.96pt) .. (49.476pt, -159.06pt)
+ -- (49.476pt, -159.06pt) .. controls (49.219pt, -159.16pt) and (48.917pt, -159.21pt) .. (48.57pt, -159.21pt)
+ -- (48.57pt, -159.21pt) .. controls (47.845pt, -159.21pt) and (47.189pt, -159.08pt) .. (46.603pt, -158.82pt)
+ -- (46.603pt, -158.82pt) .. controls (46.016pt, -158.56pt) and (45.563pt, -158.19pt) .. (45.241pt, -157.72pt)
+ -- (45.241pt, -157.72pt) .. controls (44.919pt, -157.24pt) and (44.758pt, -156.71pt) .. (44.758pt, -156.11pt)
+ -- (44.758pt, -156.11pt) .. controls (44.758pt, -155.68pt) and (44.866pt, -155.34pt) .. (45.083pt, -155.09pt)
+ -- (45.083pt, -155.09pt) .. controls (45.299pt, -154.84pt) and (45.625pt, -154.68pt) .. (46.061pt, -154.63pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(30.06pt, -194.42pt) -- (66.24001pt, -194.42pt)
+ -- (66.24001pt, -194.42pt)
+ -- (66.24001pt, -128.96pt)
+ -- (66.24001pt, -128.96pt)
+ -- (30.06pt, -128.96pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(39.736,-149.32){\includegraphics[width=14.64pt,height=10.98pt]{latexImage_a4c67c5c91132907fb2b76d410896ab9.png}}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(39.736pt, -138.34pt) -- (54.376pt, -138.34pt)
+ -- (54.376pt, -138.34pt)
+ -- (54.376pt, -149.32pt)
+ -- (54.376pt, -149.32pt)
+ -- (39.736pt, -149.32pt)
+ -- (39.736pt, -149.32pt)
+ -- (39.736pt, -138.34pt) -- cycle
+;
+\filldraw[color_29791][nonzero rule]
+(48.509pt, -148.53pt) -- (47.796pt, -148.53pt)
+ -- (47.796pt, -148.53pt)
+ -- (47.796pt, -141.92pt)
+ -- (47.796pt, -141.92pt)
+ -- (48.509pt, -141.92pt) -- cycle
+(46.284pt, -148.53pt) -- (45.571pt, -148.53pt)
+ -- (45.571pt, -148.53pt)
+ -- (45.571pt, -141.92pt)
+ -- (45.571pt, -141.92pt)
+ -- (46.284pt, -141.92pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(30.06pt, -128.96pt) -- (66.24pt, -128.96pt)
+ -- (66.24pt, -128.96pt)
+ -- (66.24pt, -194.42pt)
+ -- (66.24pt, -194.42pt)
+ -- (30.06pt, -194.42pt)
+ -- (30.06pt, -194.42pt)
+ -- (30.06pt, -128.96pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(39.716,-138.12){\includegraphics[width=14.64001pt,height=8.7599pt]{latexImage_abfebb3e1ac10c67d3a3a43903f5b592.png}}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(39.716pt, -129.36pt) -- (54.356pt, -129.36pt)
+ -- (54.356pt, -129.36pt)
+ -- (54.356pt, -138.12pt)
+ -- (54.356pt, -138.12pt)
+ -- (39.716pt, -138.12pt)
+ -- (39.716pt, -138.12pt)
+ -- (39.716pt, -129.36pt) -- cycle
+;
+\filldraw[color_29791][nonzero rule]
+(46.408pt, -135.86pt) .. controls (47.194pt, -135.86pt) and (47.82pt, -135.8199pt) .. (48.285pt, -135.75pt)
+ -- (48.285pt, -135.75pt) .. controls (48.749pt, -135.68pt) and (49.091pt, -135.5699pt) .. (49.311pt, -135.42pt)
+ -- (49.311pt, -135.42pt) .. controls (49.531pt, -135.27pt) and (49.641pt, -135.0699pt) .. (49.641pt, -134.8199pt)
+ -- (49.641pt, -134.8199pt) .. controls (49.641pt, -134.69pt) and (49.60799pt, -134.5699pt) .. (49.542pt, -134.47pt)
+ -- (49.542pt, -134.47pt) .. controls (49.476pt, -134.36pt) and (49.37199pt, -134.27pt) .. (49.231pt, -134.19pt)
+ -- (49.231pt, -134.19pt) .. controls (49.09pt, -134.11pt) and (48.902pt, -134.04pt) .. (48.668pt, -133.99pt)
+ -- (48.668pt, -133.99pt) .. controls (48.434pt, -133.93pt) and (48.142pt, -133.89pt) .. (47.794pt, -133.86pt)
+ -- (47.794pt, -133.86pt) .. controls (47.446pt, -133.84pt) and (47.057pt, -133.83pt) .. (46.628pt, -133.83pt)
+ -- (46.628pt, -133.83pt) .. controls (45.988pt, -133.83pt) and (45.45pt, -133.85pt) .. (45.014pt, -133.9pt)
+ -- (45.014pt, -133.9pt) .. controls (44.578pt, -133.95pt) and (44.242pt, -134.0099pt) .. (44.006pt, -134.1pt)
+ -- (44.006pt, -134.1pt) .. controls (43.77pt, -134.19pt) and (43.602pt, -134.3pt) .. (43.502pt, -134.42pt)
+ -- (43.502pt, -134.42pt) .. controls (43.402pt, -134.54pt) and (43.352pt, -134.68pt) .. (43.352pt, -134.84pt)
+ -- (43.352pt, -134.84pt) .. controls (43.352pt, -135.1pt) and (43.464pt, -135.3pt) .. (43.687pt, -135.44pt)
+ -- (43.687pt, -135.44pt) .. controls (43.911pt, -135.59pt) and (44.243pt, -135.7pt) .. (44.684pt, -135.7599pt)
+ -- (44.684pt, -135.7599pt) .. controls (45.126pt, -135.8199pt) and (45.7pt, -135.86pt) .. (46.408pt, -135.86pt) -- cycle
+(50.241pt, -134.91pt) .. controls (50.241pt, -135.79pt) and (49.937pt, -136.44pt) .. (49.327pt, -136.86pt)
+ -- (49.327pt, -136.86pt) .. controls (48.718pt, -137.28pt) and (47.797pt, -137.49pt) .. (46.564pt, -137.49pt)
+ -- (46.564pt, -137.49pt) .. controls (45.327pt, -137.49pt) and (44.382pt, -137.25pt) .. (43.73pt, -136.78pt)
+ -- (43.73pt, -136.78pt) .. controls (43.078pt, -136.3199pt) and (42.752pt, -135.66pt) .. (42.752pt, -134.81pt)
+ -- (42.752pt, -134.81pt) .. controls (42.752pt, -133.93pt) and (43.051pt, -133.28pt) .. (43.65pt, -132.84pt)
+ -- (43.65pt, -132.84pt) .. controls (44.248pt, -132.41pt) and (45.164pt, -132.2pt) .. (46.397pt, -132.2pt)
+ -- (46.397pt, -132.2pt) .. controls (47.663pt, -132.2pt) and (48.62pt, -132.42pt) .. (49.268pt, -132.8799pt)
+ -- (49.268pt, -132.8799pt) .. controls (49.917pt, -133.34pt) and (50.241pt, -134.02pt) .. (50.241pt, -134.91pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(30.06pt, -128.96pt) -- (66.24pt, -128.96pt)
+ -- (66.24pt, -128.96pt)
+ -- (66.24pt, -194.42pt)
+ -- (66.24pt, -194.42pt)
+ -- (30.06pt, -194.42pt)
+ -- (30.06pt, -194.42pt)
+ -- (30.06pt, -128.96pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(40.008,-131.46){\includegraphics[width=14.94pt,height=3.36pt]{latexImage_4b92c21715aa6254e9588957a5b4d380.png}}
+\put(39.723,-234.78){\includegraphics[width=14.64001pt,height=9.840061pt]{latexImage_73c45efcbe04a1f8f7358604312c29e0.png}}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(39.723pt, -224.94pt) -- (54.363pt, -224.94pt)
+ -- (54.363pt, -224.94pt)
+ -- (54.363pt, -234.84pt)
+ -- (54.363pt, -234.84pt)
+ -- (39.723pt, -234.84pt)
+ -- (39.723pt, -234.84pt)
+ -- (39.723pt, -224.94pt) -- cycle
+;
+\filldraw[color_29791][nonzero rule]
+(47.428pt, -230.55pt) .. controls (47.085pt, -230.48pt) and (46.722pt, -230.45pt) .. (46.34pt, -230.45pt)
+ -- (46.34pt, -230.45pt) .. controls (45.99pt, -230.45pt) and (45.731pt, -230.5pt) .. (45.565pt, -230.61pt)
+ -- (45.565pt, -230.61pt) .. controls (45.399pt, -230.72pt) and (45.316pt, -230.87pt) .. (45.316pt, -231.06pt)
+ -- (45.316pt, -231.06pt) .. controls (45.316pt, -231.2pt) and (45.345pt, -231.34pt) .. (45.404pt, -231.47pt)
+ -- (45.404pt, -231.47pt) .. controls (45.463pt, -231.59pt) and (45.556pt, -231.72pt) .. (45.683pt, -231.85pt)
+ -- (45.683pt, -231.85pt) .. controls (45.81pt, -231.98pt) and (45.985pt, -232.1pt) .. (46.209pt, -232.22pt)
+ -- (46.209pt, -232.22pt) .. controls (46.432pt, -232.34pt) and (46.68pt, -232.45pt) .. (46.951pt, -232.54pt)
+ -- (46.951pt, -232.54pt) .. controls (47.223pt, -232.62pt) and (47.504pt, -232.69pt) .. (47.796pt, -232.74pt)
+ -- (47.796pt, -232.74pt) .. controls (48.087pt, -232.79pt) and (48.349pt, -232.82pt) .. (48.581pt, -232.82pt)
+ -- (48.581pt, -232.82pt) .. controls (49.167pt, -232.82pt) and (49.46pt, -232.65pt) .. (49.46pt, -232.31pt)
+ -- (49.46pt, -232.31pt) .. controls (49.46pt, -232.03pt) and (49.281pt, -231.72pt) .. (48.921pt, -231.4pt)
+ -- (48.921pt, -231.4pt) .. controls (48.562pt, -231.08pt) and (48.065pt, -230.79pt) .. (47.428pt, -230.55pt) -- cycle
+(46.061pt, -229.62pt) -- (44.844pt, -229.11pt)
+ -- (44.844pt, -229.11pt)
+ -- (44.844pt, -227.65pt)
+ -- (44.844pt, -227.65pt)
+ -- (45.198pt, -227.72pt)
+ -- (45.198pt, -227.72pt) .. controls (45.366pt, -227.85pt) and (45.672pt, -228.08pt) .. (46.117pt, -228.41pt)
+ -- (46.117pt, -228.41pt) .. controls (46.562pt, -228.73pt) and (47.014pt, -229.04pt) .. (47.471pt, -229.34pt)
+ -- (47.471pt, -229.34pt) .. controls (47.586pt, -229.35pt) and (47.793pt, -229.36pt) .. (48.093pt, -229.38pt)
+ -- (48.093pt, -229.38pt) .. controls (48.383pt, -229.4pt) and (48.592pt, -229.41pt) .. (48.72pt, -229.41pt)
+ -- (48.72pt, -229.41pt) .. controls (49.017pt, -229.41pt) and (49.216pt, -229.39pt) .. (49.318pt, -229.33pt)
+ -- (49.318pt, -229.33pt) .. controls (49.42pt, -229.28pt) and (49.471pt, -229.19pt) .. (49.471pt, -229.06pt)
+ -- (49.471pt, -229.06pt) .. controls (49.471pt, -228.96pt) and (49.432pt, -228.86pt) .. (49.353pt, -228.75pt)
+ -- (49.353pt, -228.75pt) .. controls (49.274pt, -228.64pt) and (49.133pt, -228.49pt) .. (48.929pt, -228.32pt)
+ -- (48.929pt, -228.32pt)
+ -- (49.316pt, -227.93pt)
+ -- (49.316pt, -227.93pt) .. controls (49.641pt, -228.25pt) and (49.878pt, -228.55pt) .. (50.026pt, -228.84pt)
+ -- (50.026pt, -228.84pt) .. controls (50.174pt, -229.12pt) and (50.248pt, -229.43pt) .. (50.248pt, -229.77pt)
+ -- (50.248pt, -229.77pt) .. controls (50.248pt, -230.06pt) and (50.163pt, -230.28pt) .. (49.991pt, -230.43pt)
+ -- (49.991pt, -230.43pt) .. controls (49.819pt, -230.58pt) and (49.566pt, -230.65pt) .. (49.23pt, -230.65pt)
+ -- (49.23pt, -230.65pt) .. controls (49.105pt, -230.65pt) and (48.972pt, -230.64pt) .. (48.833pt, -230.62pt)
+ -- (48.833pt, -230.62pt)
+ -- (48.822pt, -230.7pt)
+ -- (48.822pt, -230.7pt) .. controls (49.251pt, -231.04pt) and (49.554pt, -231.31pt) .. (49.731pt, -231.52pt)
+ -- (49.731pt, -231.52pt) .. controls (49.908pt, -231.74pt) and (50.038pt, -231.95pt) .. (50.122pt, -232.18pt)
+ -- (50.122pt, -232.18pt) .. controls (50.206pt, -232.4pt) and (50.248pt, -232.65pt) .. (50.248pt, -232.93pt)
+ -- (50.248pt, -232.93pt) .. controls (50.248pt, -233.22pt) and (50.184pt, -233.46pt) .. (50.055pt, -233.67pt)
+ -- (50.055pt, -233.67pt) .. controls (49.927pt, -233.87pt) and (49.734pt, -234.02pt) .. (49.476pt, -234.12pt)
+ -- (49.476pt, -234.12pt) .. controls (49.219pt, -234.22pt) and (48.917pt, -234.27pt) .. (48.57pt, -234.27pt)
+ -- (48.57pt, -234.27pt) .. controls (47.845pt, -234.27pt) and (47.189pt, -234.14pt) .. (46.603pt, -233.88pt)
+ -- (46.603pt, -233.88pt) .. controls (46.016pt, -233.62pt) and (45.563pt, -233.25pt) .. (45.241pt, -232.78pt)
+ -- (45.241pt, -232.78pt) .. controls (44.919pt, -232.3pt) and (44.758pt, -231.77pt) .. (44.758pt, -231.17pt)
+ -- (44.758pt, -231.17pt) .. controls (44.758pt, -230.74pt) and (44.866pt, -230.4pt) .. (45.083pt, -230.15pt)
+ -- (45.083pt, -230.15pt) .. controls (45.299pt, -229.9pt) and (45.625pt, -229.74pt) .. (46.061pt, -229.69pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(30.06pt, -204.02pt) -- (66.24pt, -204.02pt)
+ -- (66.24pt, -204.02pt)
+ -- (66.24pt, -257.12pt)
+ -- (66.24pt, -257.12pt)
+ -- (30.06pt, -257.12pt)
+ -- (30.06pt, -257.12pt)
+ -- (30.06pt, -204.02pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(39.736,-224.38){\includegraphics[width=14.64pt,height=10.98pt]{latexImage_a4c67c5c91132907fb2b76d410896ab9.png}}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(39.736pt, -213.4pt) -- (54.376pt, -213.4pt)
+ -- (54.376pt, -213.4pt)
+ -- (54.376pt, -224.38pt)
+ -- (54.376pt, -224.38pt)
+ -- (39.736pt, -224.38pt)
+ -- (39.736pt, -224.38pt)
+ -- (39.736pt, -213.4pt) -- cycle
+;
+\filldraw[color_29791][nonzero rule]
+(48.509pt, -223.59pt) -- (47.796pt, -223.59pt)
+ -- (47.796pt, -223.59pt)
+ -- (47.796pt, -216.98pt)
+ -- (47.796pt, -216.98pt)
+ -- (48.509pt, -216.98pt) -- cycle
+(46.284pt, -223.59pt) -- (45.571pt, -223.59pt)
+ -- (45.571pt, -223.59pt)
+ -- (45.571pt, -216.98pt)
+ -- (45.571pt, -216.98pt)
+ -- (46.284pt, -216.98pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(30.06pt, -257.12pt) -- (66.24001pt, -257.12pt)
+ -- (66.24001pt, -257.12pt)
+ -- (66.24001pt, -204.02pt)
+ -- (66.24001pt, -204.02pt)
+ -- (30.06pt, -204.02pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(39.717,-213.06){\includegraphics[width=14.7pt,height=8.76pt]{latexImage_abfebb3e1ac10c67d3a3a43903f5b592.png}}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(39.717pt, -204.3pt) -- (54.417pt, -204.3pt)
+ -- (54.417pt, -204.3pt)
+ -- (54.417pt, -213.06pt)
+ -- (54.417pt, -213.06pt)
+ -- (39.717pt, -213.06pt)
+ -- (39.717pt, -213.06pt)
+ -- (39.717pt, -204.3pt) -- cycle
+;
+\filldraw[color_29791][nonzero rule]
+(48.661pt, -208.73pt) .. controls (48.869pt, -208.73pt) and (49.025pt, -208.72pt) .. (49.13pt, -208.7pt)
+ -- (49.13pt, -208.7pt) .. controls (49.236pt, -208.67pt) and (49.322pt, -208.63pt) .. (49.388pt, -208.57pt)
+ -- (49.388pt, -208.57pt) .. controls (49.454pt, -208.51pt) and (49.506pt, -208.43pt) .. (49.543pt, -208.32pt)
+ -- (49.543pt, -208.32pt) .. controls (49.581pt, -208.21pt) and (49.609pt, -208.07pt) .. (49.629pt, -207.9pt)
+ -- (49.629pt, -207.9pt) .. controls (49.649pt, -207.73pt) and (49.662pt, -207.51pt) .. (49.669pt, -207.24pt)
+ -- (49.669pt, -207.24pt)
+ -- (50.157pt, -207.24pt)
+ -- (50.157pt, -207.24pt)
+ -- (50.157pt, -211.86pt)
+ -- (50.157pt, -211.86pt)
+ -- (49.669pt, -211.86pt)
+ -- (49.669pt, -211.86pt) .. controls (49.651pt, -211.47pt) and (49.627pt, -211.18pt) .. (49.597pt, -211.01pt)
+ -- (49.597pt, -211.01pt) .. controls (49.566pt, -210.84pt) and (49.521pt, -210.71pt) .. (49.46pt, -210.62pt)
+ -- (49.46pt, -210.62pt) .. controls (49.399pt, -210.53pt) and (49.314pt, -210.47pt) .. (49.203pt, -210.43pt)
+ -- (49.203pt, -210.43pt) .. controls (49.092pt, -210.39pt) and (48.911pt, -210.37pt) .. (48.661pt, -210.37pt)
+ -- (48.661pt, -210.37pt)
+ -- (44.785pt, -210.37pt)
+ -- (44.785pt, -210.37pt) .. controls (44.638pt, -210.37pt) and (44.533pt, -210.39pt) .. (44.469pt, -210.45pt)
+ -- (44.469pt, -210.45pt) .. controls (44.404pt, -210.51pt) and (44.372pt, -210.58pt) .. (44.372pt, -210.68pt)
+ -- (44.372pt, -210.68pt) .. controls (44.372pt, -210.77pt) and (44.413pt, -210.89pt) .. (44.496pt, -211.06pt)
+ -- (44.496pt, -211.06pt) .. controls (44.578pt, -211.22pt) and (44.746pt, -211.49pt) .. (44.999pt, -211.86pt)
+ -- (44.999pt, -211.86pt)
+ -- (44.431pt, -212.18pt)
+ -- (44.431pt, -212.18pt)
+ -- (42.753pt, -209.39pt)
+ -- (42.753pt, -209.39pt)
+ -- (42.753pt, -208.7pt)
+ -- (42.753pt, -208.7pt) .. controls (43.096pt, -208.72pt) and (43.572pt, -208.73pt) .. (44.179pt, -208.73pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(30.06pt, -257.12pt) -- (66.24001pt, -257.12pt)
+ -- (66.24001pt, -257.12pt)
+ -- (66.24001pt, -204.02pt)
+ -- (66.24001pt, -204.02pt)
+ -- (30.06pt, -204.02pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(40.008,-206.52){\includegraphics[width=14.94pt,height=3.36pt]{latexImage_4b92c21715aa6254e9588957a5b4d380.png}}
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(58.32,-331.9){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{it}\selectfont\color{color_53078}Figure 5,6, 7and 8 shows the oscilloscope measurements for Base and Treble when its 1 at 20 Hz and 20K }
+\put(284,-346.36){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{it}\selectfont\color{color_53078}Hz. }
+\put(57,-375.58){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_53078}Laboratory Cleanliness Picture  }
+\put(57,-389.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_53078} }
+\put(382.54,-665.46){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_53078} }
+\put(93,-665.18){\includegraphics[width=288.98pt,height=259.25pt]{latexImage_6c5e1d878e0de9374e59d30bd2d41a95.png}}
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(0.84pt, -315.4pt) -- (581.22pt, -315.4pt)
+ -- (581.22pt, -315.4pt)
+ -- (581.22pt, -62pt)
+ -- (581.22pt, -62pt)
+ -- (0.84pt, -62pt) -- cycle
+;
+\begin{scope}
+\clip
+(10.32pt, -314.86pt) -- (299.66pt, -314.86pt)
+ -- (299.66pt, -314.86pt)
+ -- (299.66pt, -62.47998pt)
+ -- (299.66pt, -62.47998pt)
+ -- (10.32pt, -62.47998pt) -- cycle
+;
+\filldraw[color_282751][even odd rule]
+(15.48pt, -75.91998pt) -- (86.48pt, -75.91998pt)
+ -- (86.48pt, -75.91998pt)
+ -- (86.48pt, -62.47998pt)
+ -- (86.48pt, -62.47998pt)
+ -- (15.48pt, -62.47998pt) -- cycle
+;
+\begin{scope}
+\clip
+(10.32pt, -314.86pt) -- (299.66pt, -314.86pt)
+ -- (299.66pt, -314.86pt)
+ -- (299.66pt, -62.47998pt)
+ -- (299.66pt, -62.47998pt)
+ -- (10.32pt, -62.47998pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(15.48,-72.97998){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Base 1 at 20KHz }
+\put(15.48,-86.41998){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(294.5,-305.38){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(305.32,-72.97998){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(0.84pt, -315.4pt) -- (581.22pt, -315.4pt)
+ -- (581.22pt, -315.4pt)
+ -- (581.22pt, -62pt)
+ -- (581.22pt, -62pt)
+ -- (0.84pt, -62pt) -- cycle
+;
+\begin{scope}
+\clip
+(300.14pt, -314.86pt) -- (571.74pt, -314.86pt)
+ -- (571.74pt, -314.86pt)
+ -- (571.74pt, -62.47998pt)
+ -- (571.74pt, -62.47998pt)
+ -- (300.14pt, -62.47998pt) -- cycle
+;
+\filldraw[color_37696][even odd rule]
+(305.32pt, -89.35999pt) -- (382.9pt, -89.35999pt)
+ -- (382.9pt, -89.35999pt)
+ -- (382.9pt, -75.91998pt)
+ -- (382.9pt, -75.91998pt)
+ -- (305.32pt, -75.91998pt) -- cycle
+;
+\begin{scope}
+\clip
+(300.14pt, -314.86pt) -- (571.74pt, -314.86pt)
+ -- (571.74pt, -314.86pt)
+ -- (571.74pt, -62.47998pt)
+ -- (571.74pt, -62.47998pt)
+ -- (300.14pt, -62.47998pt) -- cycle
+;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(305.32,-86.41998){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Treble 1 at 20KHz }
+\put(566.58,-286.24){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\begin{tikzpicture}[overlay]
+\path(0pt,0pt);
+\begin{scope}
+\clip
+(0.84pt, -315.4pt) -- (581.22pt, -315.4pt)
+ -- (581.22pt, -315.4pt)
+ -- (581.22pt, -62pt)
+ -- (581.22pt, -62pt)
+ -- (0.84pt, -62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -62.47998pt) -- (10.32pt, -62.47998pt)
+ -- (10.32pt, -62.47998pt)
+ -- (10.32pt, -62pt)
+ -- (10.32pt, -62pt)
+ -- (9.84pt, -62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -62.47998pt) -- (10.32pt, -62.47998pt)
+ -- (10.32pt, -62.47998pt)
+ -- (10.32pt, -62pt)
+ -- (10.32pt, -62pt)
+ -- (9.84pt, -62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(10.32pt, -62.47998pt) -- (299.66pt, -62.47998pt)
+ -- (299.66pt, -62.47998pt)
+ -- (299.66pt, -62pt)
+ -- (299.66pt, -62pt)
+ -- (10.32pt, -62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(299.66pt, -62.47998pt) -- (300.14pt, -62.47998pt)
+ -- (300.14pt, -62.47998pt)
+ -- (300.14pt, -62pt)
+ -- (300.14pt, -62pt)
+ -- (299.66pt, -62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(300.14pt, -62.47998pt) -- (571.74pt, -62.47998pt)
+ -- (571.74pt, -62.47998pt)
+ -- (571.74pt, -62pt)
+ -- (571.74pt, -62pt)
+ -- (300.14pt, -62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -62.47998pt) -- (572.22pt, -62.47998pt)
+ -- (572.22pt, -62.47998pt)
+ -- (572.22pt, -62pt)
+ -- (572.22pt, -62pt)
+ -- (571.74pt, -62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -62.47998pt) -- (572.22pt, -62.47998pt)
+ -- (572.22pt, -62.47998pt)
+ -- (572.22pt, -62pt)
+ -- (572.22pt, -62pt)
+ -- (571.74pt, -62pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -314.92pt) -- (10.32pt, -314.92pt)
+ -- (10.32pt, -314.92pt)
+ -- (10.32pt, -62.47998pt)
+ -- (10.32pt, -62.47998pt)
+ -- (9.84pt, -62.47998pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -315.4pt) -- (10.32pt, -315.4pt)
+ -- (10.32pt, -315.4pt)
+ -- (10.32pt, -314.92pt)
+ -- (10.32pt, -314.92pt)
+ -- (9.84pt, -314.92pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(9.84pt, -315.4pt) -- (10.32pt, -315.4pt)
+ -- (10.32pt, -315.4pt)
+ -- (10.32pt, -314.92pt)
+ -- (10.32pt, -314.92pt)
+ -- (9.84pt, -314.92pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(10.32pt, -315.4pt) -- (299.66pt, -315.4pt)
+ -- (299.66pt, -315.4pt)
+ -- (299.66pt, -314.92pt)
+ -- (299.66pt, -314.92pt)
+ -- (10.32pt, -314.92pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(299.66pt, -314.92pt) -- (300.14pt, -314.92pt)
+ -- (300.14pt, -314.92pt)
+ -- (300.14pt, -62.47998pt)
+ -- (300.14pt, -62.47998pt)
+ -- (299.66pt, -62.47998pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(299.66pt, -315.4pt) -- (300.14pt, -315.4pt)
+ -- (300.14pt, -315.4pt)
+ -- (300.14pt, -314.92pt)
+ -- (300.14pt, -314.92pt)
+ -- (299.66pt, -314.92pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(300.14pt, -315.4pt) -- (571.74pt, -315.4pt)
+ -- (571.74pt, -315.4pt)
+ -- (571.74pt, -314.92pt)
+ -- (571.74pt, -314.92pt)
+ -- (300.14pt, -314.92pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -314.92pt) -- (572.22pt, -314.92pt)
+ -- (572.22pt, -314.92pt)
+ -- (572.22pt, -62.47998pt)
+ -- (572.22pt, -62.47998pt)
+ -- (571.74pt, -62.47998pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -315.4pt) -- (572.22pt, -315.4pt)
+ -- (572.22pt, -315.4pt)
+ -- (572.22pt, -314.92pt)
+ -- (572.22pt, -314.92pt)
+ -- (571.74pt, -314.92pt) -- cycle
+;
+\filldraw[color_29791][even odd rule]
+(571.74pt, -315.4pt) -- (572.22pt, -315.4pt)
+ -- (572.22pt, -315.4pt)
+ -- (572.22pt, -314.92pt)
+ -- (572.22pt, -314.92pt)
+ -- (571.74pt, -314.92pt) -- cycle
+;
+\end{scope}
+\begin{scope}
+\clip
+(15.475pt, -304.61pt) -- (294.135pt, -304.61pt)
+ -- (294.135pt, -304.61pt)
+ -- (294.135pt, -89.35999pt)
+ -- (294.135pt, -89.35999pt)
+ -- (15.475pt, -89.35999pt) -- cycle
+;
+\end{scope}
+\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(15.475,-304.61){\includegraphics[width=278.66pt,height=215.25pt]{latexImage_fe32eadd1b2fb4d8777bc9466466c790.png}}
+\put(305.27,-286.21){\includegraphics[width=261.25pt,height=196.85pt]{latexImage_5903c85c0fd043cf543a4fd93583534e.png}}
+\end{picture}
+\newpage
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(57,-72.5){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(291.02,-95){\fontsize{10.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\put(57,-136.06){\fontsize{19.98}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_46504}Conclusion }
+\put(57,-168.58){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}This lab provided hands-on experience in measuring the performance of a stereo amplifier }
+\put(57,-182.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}system. The function generator and oscilloscope were essential tools for verifying circuit }
+\put(57,-196.18){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}behavior. Key takeaways include: }
+\put(75,-223.96){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• The buffer amplifier maintained the expected gain across the tested frequency range, }
+\put(93.02,-237.76){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}ensuring signal integrity. }
+\put(75,-251.56){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• The preamp circuit amplified the microphone signal correctly, ensuring proper signal }
+\put(93.02,-265.36){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}strength for mixing. }
+\put(75,-279.16){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• The mixer circuit successfully combined multiple audio sources. }
+\put(75,-292.96){\fontsize{10.02}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}• The treble and bass circuits demonstrated expected frequency adjustments, effectively }
+\put(93.02,-306.76){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}enhancing or reducing specific frequency bands. }
+\put(57,-334.54){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Some challenges encountered included setting up oscilloscope probes correctly without }
+\put(57,-348.34){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}introducing noise and ensuring the function generator provided a stable signal.  }
+\put(57,-376.18){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Future improvements could involve using higher-quality connectors to minimize signal }
+\put(57,-389.98){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}interference and refining the measurement approach for the mixer circuit to obtain more realistic }
+\put(57,-403.8){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}gain values. }
+\put(57,-431.58){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}Overall, the measured values were within the design specifications, confirming the amplifier }
+\put(57,-445.38){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791}system's proper operation with minor areas for refinement. }
+\put(57,-473.16){\fontsize{12}{1}\usefont{T1}{cmr}{m}{n}\selectfont\color{color_29791} }
+\end{picture}
+\end{document}
